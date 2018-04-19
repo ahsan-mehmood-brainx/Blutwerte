@@ -104,6 +104,7 @@
 		D62805661F9F8971003E879D /* BaseComponents */ = {
 			isa = PBXGroup;
 			children = (
+				D63914F220886902008FF36F /* Storyboards */,
 				D64F01C01F9F993F00BF9FB5 /* Views */,
 				D64F01BF1F9F993A00BF9FB5 /* Controllers */,
 				D64F01BE1F9F993200BF9FB5 /* Models */,
@@ -113,9 +114,7 @@
 				D628059D1F9F8E79003E879D /* Resources */,
 				D62805791F9F8E79003E879D /* Utils */,
 				D62805671F9F8971003E879D /* AppDelegate.swift */,
-				D628056B1F9F8971003E879D /* Main.storyboard */,
 				D628056E1F9F8971003E879D /* Assets.xcassets */,
-				D62805701F9F8971003E879D /* LaunchScreen.storyboard */,
 				D62805731F9F8971003E879D /* Info.plist */,
 			);
 			path = BaseComponents;
@@ -189,6 +188,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		D63914F220886902008FF36F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D628056B1F9F8971003E879D /* Main.storyboard */,
+				D62805701F9F8971003E879D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D63914F32088691F008FF36F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			path = BaseComponents/Views/Cells;
+			sourceTree = "<group>";
+		};
 		D64F01BE1F9F993200BF9FB5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +223,7 @@
 		D64F01C01F9F993F00BF9FB5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D63914F32088691F008FF36F /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
