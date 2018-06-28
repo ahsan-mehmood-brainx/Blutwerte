@@ -37,6 +37,7 @@
 		D62805E61F9F8E7A003E879D /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B61F9F8E79003E879D /* NSArray.swift */; };
 		D62805E71F9F8E7A003E879D /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */; };
 		D64F01BD1F9F96BE00BF9FB5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F01BC1F9F96BE00BF9FB5 /* Int.swift */; };
+		D6643E2520E4F9E500D87AC1 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6643E2420E4F9E500D87AC1 /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		D62805B61F9F8E79003E879D /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
 		D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
 		D64F01BC1F9F96BE00BF9FB5 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		D6643E2420E4F9E500D87AC1 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				D628057C1F9F8E79003E879D /* Utils.swift */,
 				D628057D1F9F8E79003E879D /* GradientView.swift */,
 				D628057E1F9F8E79003E879D /* SizeUtils.swift */,
+				D6643E2420E4F9E500D87AC1 /* AppConstant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				D62805E51F9F8E7A003E879D /* Double.swift in Sources */,
 				D62805DB1F9F8E7A003E879D /* NSAttributedString.swift in Sources */,
 				D62805DF1F9F8E7A003E879D /* NSDate.swift in Sources */,
+				D6643E2520E4F9E500D87AC1 /* AppConstant.swift in Sources */,
 				D62805B81F9F8E7A003E879D /* Global.swift in Sources */,
 				D62805D61F9F8E7A003E879D /* UIView.swift in Sources */,
 				D62805D51F9F8E7A003E879D /* NSURL.swift in Sources */,
