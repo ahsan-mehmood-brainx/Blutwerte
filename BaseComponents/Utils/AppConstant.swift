@@ -26,8 +26,9 @@ class AppConstant {
     }
     
     struct Server {
-        static let BASE_URL = "https://www.google.com"
+        static let BASE_URL = "https://irprime.com/api"
         static let LOGIN_ENDPOINT = BASE_URL + "/login"
+        static let SIGNUP_ENDPOINT = BASE_URL + "/signup"
     }
     
     struct Segue {
