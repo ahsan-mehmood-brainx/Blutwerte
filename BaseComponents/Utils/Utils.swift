@@ -395,4 +395,22 @@ class Utils {
         currencyFormatter.numberStyle = .currency
         return currencyFormatter.string(from: NSNumber(value: Float(value) ?? 0.0))
     }
+    
+    static func imageWith(text: String, size: CGSize, backgroundColor: UIColor?, textColor: UIColor?, font: UIFont) -> UIImage? {
+        let frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        let textLabel = UILabel(frame: frame)
+        textLabel.textAlignment = .center
+        textLabel.backgroundColor = backgroundColor ?? UIColor.gray
+        textLabel.textColor = textColor ?? UIColor.black
+        textLabel.font = font
+        textLabel.text = (String (text)).uppercased()
+        UIGraphicsBeginImageContextWithOptions(frame.size, false, UIScreen.main.scale)
+        if let currentContext = UIGraphicsGetCurrentContext() {
+            textLabel.layer.render(in: currentContext)
+            let textImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext();
+            return textImage
+        }
+        return nil
+    }
 }

@@ -46,7 +46,7 @@ extension String {
         return String(self.characters.reversed())
     }
     
-    func RemoveExcessSpace() -> String {
+    func removeExcessSpace() -> String {
         let tempArray = self.DoSplitStringRemoveNilObject(separateString: " ")
         var output = ""
         for (index, element) in tempArray.enumerated() {
@@ -71,13 +71,13 @@ extension String {
     
     // Get Array From String with separateString and Remove Nil Object
     
-    func DoSplitStringRemoveNilObject (separateString: String) -> [String] {
+    func doSplitStringRemoveNilObject (separateString: String) -> [String] {
         let tempArray = NSMutableArray(array: self.components(separatedBy: separateString))
         tempArray.remove("")
         return NSArray(array: tempArray) as! [String]
     }
     
-    func DoSplitCharacterOfStringRemoveNilObject (separateString: String) -> [String] {
+    func doSplitCharacterOfStringRemoveNilObject (separateString: String) -> [String] {
         let tempArray = NSMutableArray(array: self.components(separatedBy: separateString))
         tempArray.remove("")
         return NSArray(array: tempArray) as! [String]
@@ -211,6 +211,22 @@ extension String {
             
             return nil
         }
+    }
+    
+    var pascalCase: String {
+        return self.components(separatedBy: " ")
+            .map {
+                if $0.count <= 1 {
+                    return $0.uppercased()
+                } else {
+                    if $0.index(of: "-") != nil {
+                        return $0.components(separatedBy: "-").map { $0.pascalCase }.joined(separator: "-")
+                    } else {
+                        return $0.capitalized
+                    }
+                }
+            }
+            .joined(separator: " ")
     }
  
 }
