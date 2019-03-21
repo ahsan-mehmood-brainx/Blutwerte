@@ -69,6 +69,10 @@ extension String {
         return self.removingPercentEncoding!
     }
     
+    func split(_ separator: String) -> [String] {
+        return self.components(separatedBy: separator)
+    }
+    
     // Get Array From String with separateString and Remove Nil Object
     
     func doSplitStringRemoveNilObject (separateString: String) -> [String] {
