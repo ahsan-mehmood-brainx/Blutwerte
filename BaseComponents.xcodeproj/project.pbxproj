@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D60A7A8C219D5D4900B4A9D8 /* InfiniteUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A7A8B219D5D4900B4A9D8 /* InfiniteUITableView.swift */; };
 		D62805681F9F8971003E879D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805671F9F8971003E879D /* AppDelegate.swift */; };
 		D628056A1F9F8971003E879D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805691F9F8971003E879D /* ViewController.swift */; };
 		D628056D1F9F8971003E879D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D628056B1F9F8971003E879D /* Main.storyboard */; };
@@ -15,10 +14,7 @@
 		D62805721F9F8971003E879D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62805701F9F8971003E879D /* LaunchScreen.storyboard */; };
 		D62805B81F9F8E7A003E879D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628057A1F9F8E79003E879D /* Global.swift */; };
 		D62805BA1F9F8E7A003E879D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628057C1F9F8E79003E879D /* Utils.swift */; };
-		D62805BB1F9F8E7A003E879D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628057D1F9F8E79003E879D /* GradientView.swift */; };
 		D62805BC1F9F8E7A003E879D /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628057E1F9F8E79003E879D /* SizeUtils.swift */; };
-		D62805BE1F9F8E7A003E879D /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805811F9F8E79003E879D /* CheckboxButton.swift */; };
-		D62805CE1F9F8E7A003E879D /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628059B1F9F8E79003E879D /* StoreManager.swift */; };
 		D62805D51F9F8E7A003E879D /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805A51F9F8E79003E879D /* NSURL.swift */; };
 		D62805D61F9F8E7A003E879D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805A61F9F8E79003E879D /* UIView.swift */; };
 		D62805D71F9F8E7A003E879D /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805A71F9F8E79003E879D /* NSDictionary.swift */; };
@@ -39,15 +35,9 @@
 		D62805E71F9F8E7A003E879D /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */; };
 		D64F01BD1F9F96BE00BF9FB5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F01BC1F9F96BE00BF9FB5 /* Int.swift */; };
 		D6643E2520E4F9E500D87AC1 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6643E2420E4F9E500D87AC1 /* AppConstant.swift */; };
-		D6B5034F21F9A58800834CAF /* ResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5034A21F9A58800834CAF /* ResourceManager.swift */; };
-		D6B5035021F9A58800834CAF /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5034B21F9A58800834CAF /* UserDefaultManager.swift */; };
-		D6B5035121F9A58800834CAF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5034C21F9A58800834CAF /* APIManager.swift */; };
-		D6B5035221F9A58800834CAF /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5034D21F9A58800834CAF /* ToastManager.swift */; };
-		D6B5035321F9A58800834CAF /* LoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B5034E21F9A58800834CAF /* LoaderManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D60A7A8B219D5D4900B4A9D8 /* InfiniteUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteUITableView.swift; sourceTree = "<group>"; };
 		D62805641F9F8971003E879D /* BaseComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62805671F9F8971003E879D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D62805691F9F8971003E879D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,10 +47,7 @@
 		D62805731F9F8971003E879D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D628057A1F9F8E79003E879D /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		D628057C1F9F8E79003E879D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		D628057D1F9F8E79003E879D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D628057E1F9F8E79003E879D /* SizeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeUtils.swift; sourceTree = "<group>"; };
-		D62805811F9F8E79003E879D /* CheckboxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
-		D628059B1F9F8E79003E879D /* StoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		D62805A51F9F8E79003E879D /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
 		D62805A61F9F8E79003E879D /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D62805A71F9F8E79003E879D /* NSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionary.swift; sourceTree = "<group>"; };
@@ -81,11 +68,6 @@
 		D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
 		D64F01BC1F9F96BE00BF9FB5 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		D6643E2420E4F9E500D87AC1 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
-		D6B5034A21F9A58800834CAF /* ResourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceManager.swift; sourceTree = "<group>"; };
-		D6B5034B21F9A58800834CAF /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
-		D6B5034C21F9A58800834CAF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		D6B5034D21F9A58800834CAF /* ToastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
-		D6B5034E21F9A58800834CAF /* LoaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +121,6 @@
 			children = (
 				D628057A1F9F8E79003E879D /* Global.swift */,
 				D628057C1F9F8E79003E879D /* Utils.swift */,
-				D628057D1F9F8E79003E879D /* GradientView.swift */,
 				D628057E1F9F8E79003E879D /* SizeUtils.swift */,
 				D6643E2420E4F9E500D87AC1 /* AppConstant.swift */,
 			);
@@ -149,8 +130,6 @@
 		D62805801F9F8E79003E879D /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D60A7A8B219D5D4900B4A9D8 /* InfiniteUITableView.swift */,
-				D62805811F9F8E79003E879D /* CheckboxButton.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -158,12 +137,6 @@
 		D62805901F9F8E79003E879D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				D6B5034C21F9A58800834CAF /* APIManager.swift */,
-				D6B5034E21F9A58800834CAF /* LoaderManager.swift */,
-				D6B5034A21F9A58800834CAF /* ResourceManager.swift */,
-				D6B5034D21F9A58800834CAF /* ToastManager.swift */,
-				D6B5034B21F9A58800834CAF /* UserDefaultManager.swift */,
-				D628059B1F9F8E79003E879D /* StoreManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -321,21 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6B5035121F9A58800834CAF /* APIManager.swift in Sources */,
 				D62805BA1F9F8E7A003E879D /* Utils.swift in Sources */,
 				D62805E21F9F8E7A003E879D /* UIImage.swift in Sources */,
 				D62805BC1F9F8E7A003E879D /* SizeUtils.swift in Sources */,
-				D6B5035021F9A58800834CAF /* UserDefaultManager.swift in Sources */,
-				D62805CE1F9F8E7A003E879D /* StoreManager.swift in Sources */,
 				D628056A1F9F8971003E879D /* ViewController.swift in Sources */,
-				D62805BB1F9F8E7A003E879D /* GradientView.swift in Sources */,
 				D64F01BD1F9F96BE00BF9FB5 /* Int.swift in Sources */,
 				D62805E31F9F8E7A003E879D /* UIViewController.swift in Sources */,
-				D60A7A8C219D5D4900B4A9D8 /* InfiniteUITableView.swift in Sources */,
 				D62805DC1F9F8E7A003E879D /* UITableView.swift in Sources */,
-				D62805BE1F9F8E7A003E879D /* CheckboxButton.swift in Sources */,
 				D62805E41F9F8E7A003E879D /* UIImageView.swift in Sources */,
-				D6B5035321F9A58800834CAF /* LoaderManager.swift in Sources */,
 				D62805E71F9F8E7A003E879D /* UITapGestureRecognizer.swift in Sources */,
 				D62805681F9F8971003E879D /* AppDelegate.swift in Sources */,
 				D62805DD1F9F8E7A003E879D /* UITextField.swift in Sources */,
@@ -343,13 +309,11 @@
 				D62805E01F9F8E7A003E879D /* Dictionary.swift in Sources */,
 				D62805DE1F9F8E7A003E879D /* NSData.swift in Sources */,
 				D62805E61F9F8E7A003E879D /* NSArray.swift in Sources */,
-				D6B5034F21F9A58800834CAF /* ResourceManager.swift in Sources */,
 				D62805D91F9F8E7A003E879D /* UIColor.swift in Sources */,
 				D62805E11F9F8E7A003E879D /* String.swift in Sources */,
 				D62805E51F9F8E7A003E879D /* Double.swift in Sources */,
 				D62805DB1F9F8E7A003E879D /* NSAttributedString.swift in Sources */,
 				D62805DF1F9F8E7A003E879D /* NSDate.swift in Sources */,
-				D6B5035221F9A58800834CAF /* ToastManager.swift in Sources */,
 				D6643E2520E4F9E500D87AC1 /* AppConstant.swift in Sources */,
 				D62805B81F9F8E7A003E879D /* Global.swift in Sources */,
 				D62805D61F9F8E7A003E879D /* UIView.swift in Sources */,

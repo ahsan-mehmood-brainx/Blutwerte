@@ -23,11 +23,7 @@ extension String {
     subscript (r: Range<Int>) -> String {
         let start = index(startIndex, offsetBy: r.lowerBound)
         let end = index(startIndex, offsetBy: r.upperBound)
-        return String(self[Range(start ..< end)])
-    }
-    
-    func length() -> Int {
-        return self.characters.count
+        return String(self[(start ..< end)])
     }
     
     func IntValue() -> Int? {
@@ -42,12 +38,8 @@ extension String {
         return NSString(string: self).contains(st)
     }
     
-    func reverse() -> String {
-        return String(self.characters.reversed())
-    }
-    
     func removeExcessSpace() -> String {
-        let tempArray = self.DoSplitStringRemoveNilObject(separateString: " ")
+        let tempArray = self.doSplitCharacterOfStringRemoveNilObject(separateString: " ")
         var output = ""
         for (index, element) in tempArray.enumerated() {
             output += element
@@ -109,7 +101,14 @@ extension String {
     }
     
     func isValidEmail() -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailRegEx = "(?:[a-zA-Z0-9!#$%\\&'*+/=?\\^_'{|}~-]+(?:\\.[a-zA-Z0-9!#$%\\&'*+/=?\\^_'{|}" +
+            "~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\" +
+            "x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-" +
+            "z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5" +
+            "]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-" +
+            "9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21" +
+        "-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+        
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: self)
     }

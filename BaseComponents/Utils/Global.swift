@@ -13,21 +13,6 @@ class Global {
     
     static let colorMain = UIColor(0xEEF8FF)
     static let colorSecond = UIColor(0x33B476)
-    static let colorSelected = UIColor(0x434F5D)
-    static let colorBg = UIColor(0xF9F9F9)
-    static let colorSeparator = UIColor(0xE6E7E8)
-    static let colorStatus = UIColor(0x333333)
-    static let colorGray = UIColor(0xAEB5B8)
-    static let colorGreen = UIColor(0x19A900)
-    static let colorLightGreen = UIColor(0x99CC33)
-    static let colorBlue = UIColor(0xAAC3FD)
-    static let colorPurple = UIColor(0x040055)
-    static let colorTextField = UIColor(0xCFE6E5)
-    static let colorNegative = UIColor(0x950034)
-    static let colorPositive = UIColor(0x99CC33)
-    static let colorNagativeMoney = UIColor(0xCF3900)
-    static let colorPositiveMoney = UIColor(0x19A900)
-    static let colorBudgetHint = UIColor(0x7BA2AC)
 
     static let imageSize = CGSize(width: 1024, height: 768)
     
