@@ -100,13 +100,13 @@
 		D62805661F9F8971003E879D /* BaseCode */ = {
 			isa = PBXGroup;
 			children = (
+				D6FCD14F229695550033E49A /* Manager */,
+				D6FCD14E2296954C0033E49A /* Libraries */,
+				D6FCD14C229695400033E49A /* Views */,
+				D6FCD14B2296952B0033E49A /* Models */,
 				D63914F220886902008FF36F /* Storyboards */,
-				D64F01C01F9F993F00BF9FB5 /* Views */,
 				D64F01BF1F9F993A00BF9FB5 /* Controllers */,
-				D64F01BE1F9F993200BF9FB5 /* Models */,
 				D62805A41F9F8E79003E879D /* Extension */,
-				D62805801F9F8E79003E879D /* Libraries */,
-				D62805901F9F8E79003E879D /* Manager */,
 				D628059D1F9F8E79003E879D /* Resources */,
 				D62805791F9F8E79003E879D /* Utils */,
 				D62805671F9F8971003E879D /* AppDelegate.swift */,
@@ -127,33 +127,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		D62805801F9F8E79003E879D /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		D62805901F9F8E79003E879D /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
 		D628059D1F9F8E79003E879D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D62805A01F9F8E79003E879D /* Fonts */,
+				D6FCD1502296955C0033E49A /* Fonts */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		D62805A01F9F8E79003E879D /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		D62805A41F9F8E79003E879D /* Extension */ = {
@@ -191,21 +170,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		D63914F32088691F008FF36F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Cells;
-			path = BaseComponents/Views/Cells;
-			sourceTree = "<group>";
-		};
-		D64F01BE1F9F993200BF9FB5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		D64F01BF1F9F993A00BF9FB5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,12 +178,47 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		D64F01C01F9F993F00BF9FB5 /* Views */ = {
+		D6FCD14B2296952B0033E49A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D63914F32088691F008FF36F /* Cells */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6FCD14C229695400033E49A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6FCD14D229695450033E49A /* Cells */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D6FCD14D229695450033E49A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D6FCD14E2296954C0033E49A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		D6FCD14F229695550033E49A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D6FCD1502296955C0033E49A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
