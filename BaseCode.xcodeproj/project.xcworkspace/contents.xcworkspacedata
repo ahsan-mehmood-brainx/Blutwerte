@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BaseComponents.xcodeproj">
+      location = "self:/Users/hunainshahid/Work/ios_base_code/BaseCode.xcodeproj">
    </FileRef>
 </Workspace>

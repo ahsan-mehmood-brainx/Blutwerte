@@ -38,7 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D62805641F9F8971003E879D /* BaseComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62805641F9F8971003E879D /* BaseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62805671F9F8971003E879D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D62805691F9F8971003E879D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D628056C1F9F8971003E879D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		D628055B1F9F8971003E879D = {
 			isa = PBXGroup;
 			children = (
-				D62805661F9F8971003E879D /* BaseComponents */,
+				D62805661F9F8971003E879D /* BaseCode */,
 				D62805651F9F8971003E879D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,12 +92,12 @@
 		D62805651F9F8971003E879D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D62805641F9F8971003E879D /* BaseComponents.app */,
+				D62805641F9F8971003E879D /* BaseCode.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D62805661F9F8971003E879D /* BaseComponents */ = {
+		D62805661F9F8971003E879D /* BaseCode */ = {
 			isa = PBXGroup;
 			children = (
 				D63914F220886902008FF36F /* Storyboards */,
@@ -113,7 +113,7 @@
 				D628056E1F9F8971003E879D /* Assets.xcassets */,
 				D62805731F9F8971003E879D /* Info.plist */,
 			);
-			path = BaseComponents;
+			path = BaseCode;
 			sourceTree = "<group>";
 		};
 		D62805791F9F8E79003E879D /* Utils */ = {
@@ -225,9 +225,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D62805631F9F8971003E879D /* BaseComponents */ = {
+		D62805631F9F8971003E879D /* BaseCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D62805761F9F8971003E879D /* Build configuration list for PBXNativeTarget "BaseComponents" */;
+			buildConfigurationList = D62805761F9F8971003E879D /* Build configuration list for PBXNativeTarget "BaseCode" */;
 			buildPhases = (
 				D62805601F9F8971003E879D /* Sources */,
 				D62805611F9F8971003E879D /* Frameworks */,
@@ -237,9 +237,9 @@
 			);
 			dependencies = (
 			);
-			name = BaseComponents;
+			name = BaseCode;
 			productName = BaseComponents;
-			productReference = D62805641F9F8971003E879D /* BaseComponents.app */;
+			productReference = D62805641F9F8971003E879D /* BaseCode.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -258,7 +258,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D628055F1F9F8971003E879D /* Build configuration list for PBXProject "BaseComponents" */;
+			buildConfigurationList = D628055F1F9F8971003E879D /* Build configuration list for PBXProject "BaseCode" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -271,7 +271,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D62805631F9F8971003E879D /* BaseComponents */,
+				D62805631F9F8971003E879D /* BaseCode */,
 			);
 		};
 /* End PBXProject section */
@@ -457,10 +457,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B5V93DYMK7;
-				INFOPLIST_FILE = BaseComponents/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BaseCode/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainxtech.BaseComponents;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brainxtech.BaseCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,10 +473,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B5V93DYMK7;
-				INFOPLIST_FILE = BaseComponents/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BaseCode/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainxtech.BaseComponents;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brainxtech.BaseCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,7 +486,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D628055F1F9F8971003E879D /* Build configuration list for PBXProject "BaseComponents" */ = {
+		D628055F1F9F8971003E879D /* Build configuration list for PBXProject "BaseCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D62805741F9F8971003E879D /* Debug */,
@@ -495,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D62805761F9F8971003E879D /* Build configuration list for PBXNativeTarget "BaseComponents" */ = {
+		D62805761F9F8971003E879D /* Build configuration list for PBXNativeTarget "BaseCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D62805771F9F8971003E879D /* Debug */,
