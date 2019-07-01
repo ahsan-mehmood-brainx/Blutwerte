@@ -234,5 +234,14 @@ extension String {
         return false
     }
     
+    func currencyFormat() -> String? {
+        guard let floatValue = Float(self) else {
+            return nil
+        }
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.numberStyle = .currency
+        return currencyFormatter.string(from: NSNumber(value: floatValue))
+    }
+    
 }
 

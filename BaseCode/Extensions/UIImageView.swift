@@ -12,7 +12,7 @@ extension UIImageView {
     
     func changeSulfur() {
         let visualV = UIVisualEffectView(effect: UIBlurEffect(style: .dark)) as UIVisualEffectView
-        visualV.frame = CGRect(x: 0, y: 0, width: Global.SCREEN_HEIGHT, height: self.bounds.height)
+        visualV.frame = CGRect(x: 0, y: 0, width: ScreenSize.SCREEN_WIDTH, height: self.bounds.height)
         self.addSubview(visualV)
     }
     

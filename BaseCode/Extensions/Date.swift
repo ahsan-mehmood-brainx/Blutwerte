@@ -86,25 +86,25 @@ extension Date {
         self.init(timeIntervalSince1970: Double(ticks)/10_000_000 - 62_135_596_800)
     }
     
-    func daysInBetween(_ date: NSDate) -> Double {
+    func daysInBetween(_ date: Date) -> Double {
         var diff = self.timeIntervalSinceNow - date.timeIntervalSinceNow
         diff = fabs(diff/86400)
         return diff
     }
     
-    func hoursInBetween(_ date: NSDate) -> Double {
+    func hoursInBetween(_ date: Date) -> Double {
         var diff = self.timeIntervalSinceNow - date.timeIntervalSinceNow
         diff = fabs(diff/3600)
         return diff
     }
     
-    func minutesInBetween(_ date: NSDate) -> Double {
+    func minutesInBetween(_ date: Date) -> Double {
         var diff = self.timeIntervalSinceNow - date.timeIntervalSinceNow
         diff = fabs(diff/60)
         return diff
     }
     
-    func secondsInBetween(_ date: NSDate) -> Double {
+    func secondsInBetween(_ date: Date) -> Double {
         var diff = self.timeIntervalSinceNow - date.timeIntervalSinceNow
         diff = fabs(diff)
         return diff
