@@ -12,6 +12,56 @@ import CoreTelephony
 
 extension String {
 
+    public var isNotEmpty: Bool {
+        return !isEmpty
+    }
+    
+    var dateFromISO8601: Date? {
+        return Date.Formatter.iso8601.date(from: self)
+    }
+    
+    var dateFromDateString: Date? {
+        return Date.Formatter.dateFormat.date(from: self)
+    }
+    
+    var dateFromTimeString: Date? {
+        return Date.Formatter.timeFormat.date(from: self)
+    }
+    
+    var date: Date? {
+        get {
+            if let d = dateFromISO8601 {
+                return d
+            }
+            
+            if let d = dateFromDateString {
+                return d
+            }
+            
+            if let d = dateFromTimeString {
+                return d
+            }
+            
+            return nil
+        }
+    }
+    
+    var pascalCase: String {
+        return self.components(separatedBy: " ")
+            .map {
+                if $0.count <= 1 {
+                    return $0.uppercased()
+                } else {
+                    if $0.index(of: "-") != nil {
+                        return $0.components(separatedBy: "-").map { $0.pascalCase }.joined(separator: "-")
+                    } else {
+                        return $0.capitalized
+                    }
+                }
+            }
+            .joined(separator: " ")
+    }
+    
     subscript (i: Int) -> Character {
         return self[index(startIndex, offsetBy: i)]
     }
@@ -177,60 +227,12 @@ extension String {
         return result
     }
 
-    
-    public var isNotEmpty: Bool {
-        return !isEmpty
-    }
-    
-    func widthWithConstrainedWidth(font: UIFont) -> CGFloat {
-        return self.widthWithConstrainedWidth(font: font)
-    }
-
-    var dateFromISO8601: Date? {
-        return Date.Formatter.iso8601.date(from: self)
-    }
-    
-    var dateFromDateString: Date? {
-        return Date.Formatter.dateFormat.date(from: self)
-    }
-    
-    var dateFromTimeString: Date? {
-        return Date.Formatter.timeFormat.date(from: self)
-    }
-    
-    var date: Date? {
-        get {
-            if let d = dateFromISO8601 {
-                return d
-            }
-            
-            if let d = dateFromDateString {
-                return d
-            }
-            
-            if let d = dateFromTimeString {
-                return d
-            }
-            
-            return nil
+    func verifyUrl () -> Bool {
+        if let url  = URL(string: self) {
+            return UIApplication.shared.canOpenURL(url)
         }
+        return false
     }
     
-    var pascalCase: String {
-        return self.components(separatedBy: " ")
-            .map {
-                if $0.count <= 1 {
-                    return $0.uppercased()
-                } else {
-                    if $0.index(of: "-") != nil {
-                        return $0.components(separatedBy: "-").map { $0.pascalCase }.joined(separator: "-")
-                    } else {
-                        return $0.capitalized
-                    }
-                }
-            }
-            .joined(separator: " ")
-    }
- 
 }
 

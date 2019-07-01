@@ -27,3 +27,4 @@ private func getColorComponents(value: Int) -> (red: CGFloat, green: CGFloat, bl
     
     return (r, g, b)
 }
+

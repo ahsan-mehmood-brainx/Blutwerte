@@ -14,11 +14,6 @@ class Global {
     static let colorMain = UIColor(0xEEF8FF)
     static let colorSecond = UIColor(0x33B476)
 
-    static let imageSize = CGSize(width: 1024, height: 768)
-    
-    static var SCREEN_WIDTH = UIScreen.main.bounds.size.width
-    static var SCREEN_HEIGHT = UIScreen.main.bounds.size.height
-
     
     // Font
     static func boldFont(_ size: CGFloat) -> UIFont {

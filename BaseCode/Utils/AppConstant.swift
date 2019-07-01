@@ -9,12 +9,13 @@
 import Foundation
 
 class AppConstant {
+    
     struct Title {
-        static let popupDelete = "Delete"
+        static let title = "Title"
     }
     
     struct Message {
-        static let popupDelete = "Are you sure you want to delete?"
+        static let message = "Message"
     }
     
     struct StoryboardId {
@@ -25,13 +26,13 @@ class AppConstant {
         static let mainViewController = "mainViewController"
     }
     
-    struct Server {
-        static let BASE_URL = "https://irprime.com/api"
-        static let LOGIN_ENDPOINT = BASE_URL + "/login"
-        static let SIGNUP_ENDPOINT = BASE_URL + "/signup"
+    struct Endpoint {
+        static let baseURL = "https://www.baseurl.com"
+        static let loginURL = baseURL + "/login"
+        static let signupURL = baseURL + "/signup"
     }
     
     struct Segue {
-        static let TO_LOGIN_CONTROLLER = "loginController"
+        static let toMainController = "mainController"
     }
 }

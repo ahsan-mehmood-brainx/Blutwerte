@@ -10,10 +10,6 @@ import UIKit
 import SystemConfiguration
 import UserNotifications
 
-protocol AlertDelegate: class {
-    func okAlertActionClicked()
-}
-
 class Utils {
     
     static func generateUUIDString() -> String {
@@ -22,49 +18,6 @@ class Utils {
         return st
     }
     
-    static func showAlert(title: String, message: String, viewController: UIViewController) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        viewController.present(alertController, animated: true, completion: nil)
-    }
-    
-    static func showAlertAction(title: String, message: String, viewController: UIViewController, alertDelegate: AlertDelegate?) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
-        let okAction = UIAlertAction(title: "Ok", style: .default) {
-            UIAlertAction in
-            if alertDelegate != nil {
-                alertDelegate?.okAlertActionClicked()
-            }
-        }
-        alertController.addAction(cancelAction)
-        alertController.addAction(okAction)
-        viewController.present(alertController, animated: true, completion: nil)
-    }
-    
-    static func showAlertMessageAction(title: String, message: String, viewController: UIViewController, alertDelegate: AlertDelegate?) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
-        let okAction = UIAlertAction(title: "Yes", style: .default) {
-            UIAlertAction in
-            if alertDelegate != nil {
-                alertDelegate?.okAlertActionClicked()
-            }
-        }
-        alertController.addAction(cancelAction)
-        alertController.addAction(okAction)
-        viewController.present(alertController, animated: true, completion: nil)
-    }
-    
-    static func verifyUrl (urlString: String?) -> Bool {
-        if let urlString = urlString {
-            if let url  = URL(string: urlString) {
-                return UIApplication.shared.canOpenURL(url)
-            }
-        }
-        return false
-    }
     
     static func isInternetAvailable() -> Bool {
         var zeroAddress = sockaddr_in()
@@ -86,13 +39,6 @@ class Utils {
         return (isReachable && !needsConnection)
     }
     
-    static func getRandomName() -> String {
-        let date = NSDate()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy_MM_dd_HH_mm_ss"
-        return "\(dateFormatter.string(from: date as Date))"
-    }
-    
     static func getRandomColor() -> UIColor{
         let randomRed = CGFloat(drand48())
         let randomGreen = CGFloat(drand48())
@@ -110,29 +56,11 @@ class Utils {
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
             center.requestAuthorization(options:[.badge, .alert, .sound]) { (granted, error) in }
-        }
-        else{
+        } else {
             application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
         }
         application.registerForRemoteNotifications()
         application.applicationIconBadgeNumber = badgeCount
     }
     
-    static func imageWith(text: String, size: CGSize, backgroundColor: UIColor?, textColor: UIColor?, font: UIFont) -> UIImage? {
-        let frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
-        let textLabel = UILabel(frame: frame)
-        textLabel.textAlignment = .center
-        textLabel.backgroundColor = backgroundColor ?? UIColor.gray
-        textLabel.textColor = textColor ?? UIColor.black
-        textLabel.font = font
-        textLabel.text = (String (text)).uppercased()
-        UIGraphicsBeginImageContextWithOptions(frame.size, false, UIScreen.main.scale)
-        if let currentContext = UIGraphicsGetCurrentContext() {
-            textLabel.layer.render(in: currentContext)
-            let textImage = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext();
-            return textImage
-        }
-        return nil
-    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C71811E322C9FDE300D3F3BE /* AlertsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71811E222C9FDE300D3F3BE /* AlertsManager.swift */; };
 		D62805681F9F8971003E879D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805671F9F8971003E879D /* AppDelegate.swift */; };
 		D628056A1F9F8971003E879D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805691F9F8971003E879D /* ViewController.swift */; };
 		D628056D1F9F8971003E879D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D628056B1F9F8971003E879D /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C71811E222C9FDE300D3F3BE /* AlertsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsManager.swift; sourceTree = "<group>"; };
 		D62805641F9F8971003E879D /* BaseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62805671F9F8971003E879D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D62805691F9F8971003E879D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C71811E122C9FD0C00D3F3BE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C71811E222C9FDE300D3F3BE /* AlertsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		D628055B1F9F8971003E879D = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +110,7 @@
 		D62805661F9F8971003E879D /* BaseCode */ = {
 			isa = PBXGroup;
 			children = (
-				D6FCD14F229695550033E49A /* Manager */,
+				C71811E122C9FD0C00D3F3BE /* Managers */,
 				D6FCD14E2296954C0033E49A /* Libraries */,
 				D6FCD14C229695400033E49A /* Views */,
 				D6FCD14B2296952B0033E49A /* Models */,
@@ -207,13 +217,6 @@
 			path = Libraries;
 			sourceTree = "<group>";
 		};
-		D6FCD14F229695550033E49A /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
 		D6FCD1502296955C0033E49A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +316,7 @@
 				D62805E51F9F8E7A003E879D /* Double.swift in Sources */,
 				D62805DB1F9F8E7A003E879D /* NSAttributedString.swift in Sources */,
 				D62805DF1F9F8E7A003E879D /* NSDate.swift in Sources */,
+				C71811E322C9FDE300D3F3BE /* AlertsManager.swift in Sources */,
 				D6643E2520E4F9E500D87AC1 /* AppConstant.swift in Sources */,
 				D62805B81F9F8E7A003E879D /* Global.swift in Sources */,
 				D62805D61F9F8E7A003E879D /* UIView.swift in Sources */,
