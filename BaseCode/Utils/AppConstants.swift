@@ -1,5 +1,5 @@
 //
-//  AppConstant.swift
+//  AppConstants.swift
 //  BaseComponents
 //
 //  Created by Hunain Shahid on 28/06/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AppConstant {
+class AppConstants {
     
     struct Title {
         static let title = "Title"

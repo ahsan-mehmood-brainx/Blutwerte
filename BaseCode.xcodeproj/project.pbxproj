@@ -16,7 +16,6 @@
 		D62805B81F9F8E7A003E879D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628057A1F9F8E79003E879D /* Global.swift */; };
 		D62805BA1F9F8E7A003E879D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628057C1F9F8E79003E879D /* Utils.swift */; };
 		D62805BC1F9F8E7A003E879D /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628057E1F9F8E79003E879D /* SizeUtils.swift */; };
-		D62805D51F9F8E7A003E879D /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805A51F9F8E79003E879D /* NSURL.swift */; };
 		D62805D61F9F8E7A003E879D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805A61F9F8E79003E879D /* UIView.swift */; };
 		D62805D71F9F8E7A003E879D /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805A71F9F8E79003E879D /* NSDictionary.swift */; };
 		D62805D81F9F8E7A003E879D /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805A81F9F8E79003E879D /* UIBarButtonItem.swift */; };
@@ -35,7 +34,7 @@
 		D62805E61F9F8E7A003E879D /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B61F9F8E79003E879D /* NSArray.swift */; };
 		D62805E71F9F8E7A003E879D /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */; };
 		D64F01BD1F9F96BE00BF9FB5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F01BC1F9F96BE00BF9FB5 /* Int.swift */; };
-		D6643E2520E4F9E500D87AC1 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6643E2420E4F9E500D87AC1 /* AppConstant.swift */; };
+		D6643E2520E4F9E500D87AC1 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6643E2420E4F9E500D87AC1 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +49,6 @@
 		D628057A1F9F8E79003E879D /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		D628057C1F9F8E79003E879D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D628057E1F9F8E79003E879D /* SizeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeUtils.swift; sourceTree = "<group>"; };
-		D62805A51F9F8E79003E879D /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
 		D62805A61F9F8E79003E879D /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D62805A71F9F8E79003E879D /* NSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionary.swift; sourceTree = "<group>"; };
 		D62805A81F9F8E79003E879D /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
@@ -69,7 +67,7 @@
 		D62805B61F9F8E79003E879D /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
 		D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
 		D64F01BC1F9F96BE00BF9FB5 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
-		D6643E2420E4F9E500D87AC1 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		D6643E2420E4F9E500D87AC1 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +130,7 @@
 				D628057A1F9F8E79003E879D /* Global.swift */,
 				D628057C1F9F8E79003E879D /* Utils.swift */,
 				D628057E1F9F8E79003E879D /* SizeUtils.swift */,
-				D6643E2420E4F9E500D87AC1 /* AppConstant.swift */,
+				D6643E2420E4F9E500D87AC1 /* AppConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -148,7 +146,6 @@
 		D62805A41F9F8E79003E879D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D62805A51F9F8E79003E879D /* NSURL.swift */,
 				D62805A61F9F8E79003E879D /* UIView.swift */,
 				D62805A71F9F8E79003E879D /* NSDictionary.swift */,
 				D62805A81F9F8E79003E879D /* UIBarButtonItem.swift */,
@@ -317,10 +314,9 @@
 				D62805DB1F9F8E7A003E879D /* NSAttributedString.swift in Sources */,
 				D62805DF1F9F8E7A003E879D /* NSDate.swift in Sources */,
 				C71811E322C9FDE300D3F3BE /* AlertsManager.swift in Sources */,
-				D6643E2520E4F9E500D87AC1 /* AppConstant.swift in Sources */,
+				D6643E2520E4F9E500D87AC1 /* AppConstants.swift in Sources */,
 				D62805B81F9F8E7A003E879D /* Global.swift in Sources */,
 				D62805D61F9F8E7A003E879D /* UIView.swift in Sources */,
-				D62805D51F9F8E7A003E879D /* NSURL.swift in Sources */,
 				D62805D71F9F8E7A003E879D /* NSDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
