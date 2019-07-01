@@ -116,7 +116,7 @@
 				D6FCD14B2296952B0033E49A /* Models */,
 				D63914F220886902008FF36F /* Storyboards */,
 				D64F01BF1F9F993A00BF9FB5 /* Controllers */,
-				D62805A41F9F8E79003E879D /* Extension */,
+				D62805A41F9F8E79003E879D /* Extensions */,
 				D628059D1F9F8E79003E879D /* Resources */,
 				D62805791F9F8E79003E879D /* Utils */,
 				D62805671F9F8971003E879D /* AppDelegate.swift */,
@@ -145,7 +145,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D62805A41F9F8E79003E879D /* Extension */ = {
+		D62805A41F9F8E79003E879D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				D62805A51F9F8E79003E879D /* NSURL.swift */,
@@ -168,7 +168,7 @@
 				D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */,
 				D64F01BC1F9F96BE00BF9FB5 /* Int.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D63914F220886902008FF36F /* Storyboards */ = {
