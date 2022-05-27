@@ -135,11 +135,11 @@
 			isa = PBXGroup;
 			children = (
 				D9CDD4572771DF550036C036 /* Components */,
+				D90807C4277352EE004C78EB /* Coordinator */,
 				D62805A41F9F8E79003E879D /* Extensions */,
 				D9CDD4592771DF8F0036C036 /* Globals */,
 				D9CDD4562771DF430036C036 /* Managers */,
 				D6FCD14B2296952B0033E49A /* Models */,
-				D90807C4277352EE004C78EB /* Coordinator */,
 				D628059D1F9F8E79003E879D /* Resources */,
 				D63914F220886902008FF36F /* Storyboards */,
 				D9CDD45A2771E1E30036C036 /* SupportingFiles */,
@@ -188,8 +188,8 @@
 		D63914F220886902008FF36F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				D628056B1F9F8971003E879D /* Main.storyboard */,
 				D62805701F9F8971003E879D /* LaunchScreen.storyboard */,
+				D628056B1F9F8971003E879D /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -243,8 +243,8 @@
 		D90807C4277352EE004C78EB /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				078A877E2840A71A00E4E2E1 /* Coordinator.swift */,
 				078A87802840A72700E4E2E1 /* AppCoordinator.swift */,
+				078A877E2840A71A00E4E2E1 /* Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -252,9 +252,9 @@
 		D9CDD4562771DF430036C036 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				071D3C462840A1AF0037728F /* APIClient.swift */,
 				071D3C482840A1D60037728F /* LoaderManager.swift */,
 				071D3C442840A1A60037728F /* UserDefaultsManager.swift */,
-				071D3C462840A1AF0037728F /* APIClient.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -270,13 +270,13 @@
 		D9CDD4592771DF8F0036C036 /* Globals */ = {
 			isa = PBXGroup;
 			children = (
-				C71811EB22CA4DF300D3F3BE /* Utils.swift */,
 				078A87962840B44300E4E2E1 /* AppConstants.swift */,
 				078A87982840B4BA00E4E2E1 /* Endpoint.swift */,
 				078A879A2840B4E000E4E2E1 /* Environment.swift */,
-				078A879C2840B5B800E4E2E1 /* LocalizedKey.swift */,
-				078A879E2840B64900E4E2E1 /* Localizable.strings */,
 				078A87A02840B90B00E4E2E1 /* Images.swift */,
+				078A879E2840B64900E4E2E1 /* Localizable.strings */,
+				078A879C2840B5B800E4E2E1 /* LocalizedKey.swift */,
+				C71811EB22CA4DF300D3F3BE /* Utils.swift */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -284,8 +284,8 @@
 		D9CDD45A2771E1E30036C036 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				D62805731F9F8971003E879D /* Info.plist */,
 				D62805671F9F8971003E879D /* AppDelegate.swift */,
+				D62805731F9F8971003E879D /* Info.plist */,
 				078A87822840A7A800E4E2E1 /* SceneDelegate.swift */,
 			);
 			path = SupportingFiles;
