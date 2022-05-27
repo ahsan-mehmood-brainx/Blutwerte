@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIView {
-
+    
     var width: CGFloat {
         get {
             return self.frame.size.width
@@ -116,21 +116,45 @@ extension UIView {
         }
     }
     
+    func makeRoundCorners(cornerRadius: CGFloat,
+                          maskedCorners: CACornerMask = [.layerMinXMinYCorner,
+                                                         .layerMaxXMinYCorner,
+                                                         .layerMinXMaxYCorner,
+                                                         .layerMaxXMaxYCorner])
+    {
+        clipsToBounds = true
+        layer.cornerRadius = cornerRadius
+        layer.maskedCorners = maskedCorners
+    }
+    
+    func makeRoundCornersWithBorder(cornerRadius: CGFloat,
+                                    maskedCorners: CACornerMask = [.layerMinXMinYCorner,
+                                                                   .layerMaxXMinYCorner,
+                                                                   .layerMinXMaxYCorner,
+                                                                   .layerMaxXMaxYCorner],
+                                    borderColor: UIColor = .clear,
+                                    borderWidth: CGFloat = 0.5)
+    {
+        makeRoundCorners(cornerRadius: cornerRadius, maskedCorners: maskedCorners)
+        layer.borderColor = borderColor.cgColor
+        layer.borderWidth = borderWidth
+    }
+    
     func addDashedBorder(strokeColor: UIColor, lineWidth: CGFloat) {
         self.layoutIfNeeded()
         let strokeColor = strokeColor.cgColor
-
+        
         let shapeLayer:CAShapeLayer = CAShapeLayer()
         let frameSize = self.frame.size
         let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
-
+        
         shapeLayer.bounds = shapeRect
         shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.strokeColor = strokeColor
         shapeLayer.lineWidth = lineWidth
-        shapeLayer.lineJoin = kCALineJoinRound
-
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
+        
         shapeLayer.lineDashPattern = [5,5] // adjust to your liking
         shapeLayer.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: shapeRect.width, height: shapeRect.height), cornerRadius: self.layer.cornerRadius).cgPath
     }
@@ -153,7 +177,7 @@ extension UIView {
         animation.autoreverses = false
         self.layer.add(animation, forKey: nil)
     }
-
+    
     func resumeLayer() {
         let pausedTime: CFTimeInterval = layer.timeOffset
         layer.speed = 1.0
@@ -162,13 +186,13 @@ extension UIView {
         let timeSincePause: CFTimeInterval = layer.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
         layer.beginTime = timeSincePause
     }
-
+    
     func pauseLayer() {
         let pausedTime : CFTimeInterval = layer.convertTime(CACurrentMediaTime(), from: nil)
         layer.speed = 0.0
         layer.timeOffset = pausedTime
     }
-
+    
     @IBInspectable var shadow: Bool {
         get {
             return layer.shadowOpacity > 0.0
@@ -180,7 +204,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable var setGetCornerRadius: CGFloat {
         get {
             return self.layer.cornerRadius
         }

@@ -11,6 +11,9 @@ import SystemConfiguration
 import UserNotifications
 
 class Utils {
+    static func after(_ delay: Double, closure: @escaping () -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: closure)
+    }
     
     static func showOkAlert(title: String, message: String, viewController: UIViewController) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)

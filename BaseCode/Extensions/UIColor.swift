@@ -9,9 +9,15 @@
 import UIKit
 
 extension UIColor {
+    static let whiteCustom = UIColor(named: "white")!
+    static let blackCustom = UIColor(named: "black")!
+}
+
+extension UIColor {
     
+    /// The resulting Core Image color, or nil
     var coreImageColor: CoreImage.CIColor {
-        return CoreImage.CIColor(color: self)  // The resulting Core Image color, or nil
+        return CoreImage.CIColor(color: self)
     }
     
     public convenience init(_ value: Int) {
@@ -24,7 +30,6 @@ private func getColorComponents(value: Int) -> (red: CGFloat, green: CGFloat, bl
     let r = CGFloat(value >> 16 & 0xFF) / 255.0
     let g = CGFloat(value >> 8 & 0xFF) / 255.0
     let b = CGFloat(value & 0xFF) / 255.0
-    
     return (r, g, b)
 }
 
