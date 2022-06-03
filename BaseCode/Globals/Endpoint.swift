@@ -14,4 +14,8 @@ enum Endpoint {
     static var login: URL? {
         URL(string: "auth/login", relativeTo: Environment.baseUrl)
     }
+    
+    static var user: (Int) -> URL? = {
+        URL(string: "users/\($0)", relativeTo: Environment.baseUrl)
+    }
 }

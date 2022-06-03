@@ -29,9 +29,7 @@
 		078A879B2840B4E000E4E2E1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A879A2840B4E000E4E2E1 /* Environment.swift */; };
 		078A879D2840B5B800E4E2E1 /* LocalizedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A879C2840B5B800E4E2E1 /* LocalizedKey.swift */; };
 		078A879F2840B64900E4E2E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 078A879E2840B64900E4E2E1 /* Localizable.strings */; };
-		078A87A12840B90B00E4E2E1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A87A02840B90B00E4E2E1 /* Images.swift */; };
 		078A87A32840D15100E4E2E1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A87A22840D15100E4E2E1 /* BaseViewController.swift */; };
-		07B20A8F2840D5DD0051D116 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 07B20A8E2840D5DD0051D116 /* SwiftMessages */; };
 		C71811EC22CA4DF300D3F3BE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71811EB22CA4DF300D3F3BE /* Utils.swift */; };
 		D62805681F9F8971003E879D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805671F9F8971003E879D /* AppDelegate.swift */; };
 		D628056A1F9F8971003E879D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805691F9F8971003E879D /* ViewController.swift */; };
@@ -49,9 +47,7 @@
 		D62805E31F9F8E7A003E879D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B31F9F8E79003E879D /* UIViewController.swift */; };
 		D62805E41F9F8E7A003E879D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B41F9F8E79003E879D /* UIImageView.swift */; };
 		D62805E51F9F8E7A003E879D /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B51F9F8E79003E879D /* Double.swift */; };
-		D62805E61F9F8E7A003E879D /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B61F9F8E79003E879D /* NSArray.swift */; };
 		D62805E71F9F8E7A003E879D /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */; };
-		D64F01BD1F9F96BE00BF9FB5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64F01BC1F9F96BE00BF9FB5 /* Int.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +69,6 @@
 		078A879A2840B4E000E4E2E1 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		078A879C2840B5B800E4E2E1 /* LocalizedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKey.swift; sourceTree = "<group>"; };
 		078A879E2840B64900E4E2E1 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		078A87A02840B90B00E4E2E1 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		078A87A22840D15100E4E2E1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C71811EB22CA4DF300D3F3BE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D62805641F9F8971003E879D /* BaseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,9 +89,7 @@
 		D62805B31F9F8E79003E879D /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		D62805B41F9F8E79003E879D /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		D62805B51F9F8E79003E879D /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
-		D62805B61F9F8E79003E879D /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
 		D62805B71F9F8E79003E879D /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
-		D64F01BC1F9F96BE00BF9FB5 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +101,6 @@
 				078A877D2840A68F00E4E2E1 /* MBProgressHUD in Frameworks */,
 				078A87772840A5CE00E4E2E1 /* Alamofire in Frameworks */,
 				078A877A2840A61D00E4E2E1 /* IQKeyboardManagerSwift in Frameworks */,
-				07B20A8F2840D5DD0051D116 /* SwiftMessages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,8 +157,6 @@
 				D62805AF1F9F8E79003E879D /* Date.swift */,
 				D62805B01F9F8E79003E879D /* Dictionary.swift */,
 				D62805B51F9F8E79003E879D /* Double.swift */,
-				D64F01BC1F9F96BE00BF9FB5 /* Int.swift */,
-				D62805B61F9F8E79003E879D /* NSArray.swift */,
 				D62805B11F9F8E79003E879D /* String.swift */,
 				078A878A2840AE1800E4E2E1 /* UIButton.swift */,
 				078A878E2840B08100E4E2E1 /* UICollectionViewCell.swift */,
@@ -273,7 +263,6 @@
 				078A87962840B44300E4E2E1 /* AppConstants.swift */,
 				078A87982840B4BA00E4E2E1 /* Endpoint.swift */,
 				078A879A2840B4E000E4E2E1 /* Environment.swift */,
-				078A87A02840B90B00E4E2E1 /* Images.swift */,
 				078A879E2840B64900E4E2E1 /* Localizable.strings */,
 				078A879C2840B5B800E4E2E1 /* LocalizedKey.swift */,
 				C71811EB22CA4DF300D3F3BE /* Utils.swift */,
@@ -312,7 +301,6 @@
 				078A87792840A61D00E4E2E1 /* IQKeyboardManagerSwift */,
 				078A877C2840A68F00E4E2E1 /* MBProgressHUD */,
 				078A87942840B3E600E4E2E1 /* ObjectMapper */,
-				07B20A8E2840D5DD0051D116 /* SwiftMessages */,
 			);
 			productName = BaseComponents;
 			productReference = D62805641F9F8971003E879D /* BaseCode.app */;
@@ -349,7 +337,6 @@
 				078A87782840A61D00E4E2E1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				078A877B2840A68F00E4E2E1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				078A87932840B3E600E4E2E1 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
-				07B20A8D2840D5DD0051D116 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = D62805651F9F8971003E879D /* Products */;
 			projectDirPath = "";
@@ -386,8 +373,6 @@
 				D62805E21F9F8E7A003E879D /* UIImage.swift in Sources */,
 				078A87A32840D15100E4E2E1 /* BaseViewController.swift in Sources */,
 				D628056A1F9F8971003E879D /* ViewController.swift in Sources */,
-				D64F01BD1F9F96BE00BF9FB5 /* Int.swift in Sources */,
-				078A87A12840B90B00E4E2E1 /* Images.swift in Sources */,
 				078A879B2840B4E000E4E2E1 /* Environment.swift in Sources */,
 				D62805E31F9F8E7A003E879D /* UIViewController.swift in Sources */,
 				078A87832840A7A800E4E2E1 /* SceneDelegate.swift in Sources */,
@@ -400,7 +385,6 @@
 				D62805681F9F8971003E879D /* AppDelegate.swift in Sources */,
 				D62805E01F9F8E7A003E879D /* Dictionary.swift in Sources */,
 				D62805DE1F9F8E7A003E879D /* Data.swift in Sources */,
-				D62805E61F9F8E7A003E879D /* NSArray.swift in Sources */,
 				D62805D91F9F8E7A003E879D /* UIColor.swift in Sources */,
 				D62805E11F9F8E7A003E879D /* String.swift in Sources */,
 				D62805E51F9F8E7A003E879D /* Double.swift in Sources */,
@@ -642,14 +626,6 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		07B20A8D2840D5DD0051D116 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -672,11 +648,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 078A87932840B3E600E4E2E1 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
-		};
-		07B20A8E2840D5DD0051D116 /* SwiftMessages */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 07B20A8D2840D5DD0051D116 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
-			productName = SwiftMessages;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

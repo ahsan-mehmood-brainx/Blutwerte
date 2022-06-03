@@ -7,36 +7,14 @@
 //
 
 import UIKit
-import SwiftMessages
 
 class BaseViewController: UIViewController {
-    // MARK: - Instance Properties
-    
-    var toastView: MessageView!
     
     // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {
         super.awakeFromNib()
         navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    // MARK: Private Methods
-    
-    private func setToastView() {
-        toastView = MessageView.viewFromNib(layout: .cardView)
-        toastView.iconImageView?.image = UIImage(systemName: Images.checkMarkFill)
-        toastView.titleLabel?.text = LocalizedKey.success.string
-        toastView.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        toastView.titleLabel?.textColor = .black
-        toastView.bodyLabel?.font = .systemFont(ofSize: 12)
-        toastView.bodyLabel?.textColor = .black
-        toastView.iconLabel?.isHidden = true
-        toastView.button?.setImage(UIImage(systemName: Images.crossMarkFill)?.withRenderingMode(.alwaysOriginal), for: .normal)
-        toastView.button?.setTitle(AppConstants.empty, for: .normal)
-        toastView.layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
-        (toastView.backgroundView as? CornerRoundingView)?.cornerRadius = 16
-        toastView.configureDropShadow()
     }
     
     // MARK: - Public Methods
@@ -57,22 +35,8 @@ class BaseViewController: UIViewController {
     }
     
     func addCrossLeftBarItem(_ action: Selector) {
-        let leftItem = UIBarButtonItem(image: UIImage(systemName: Images.crossMarkFill)?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: action)
+        let leftItem = UIBarButtonItem(image: UIImage.crossMarkFill?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: action)
         navigationItem.leftBarButtonItem = leftItem
-    }
-    
-    func showToastView(withTitle title: String = LocalizedKey.success.string, withMessage message: String, okHandler: ((UIButton) -> Void)? = nil) {
-        if toastView == nil {
-            setToastView()
-        }
-        toastView.titleLabel?.text = title
-        toastView.bodyLabel?.text = message
-        toastView.buttonTapHandler = okHandler ?? { _ in
-            Utils.after(30) {
-                SwiftMessages.hide()
-            }
-        }
-        SwiftMessages.show(view: toastView)
     }
     
     func setBackItem() {

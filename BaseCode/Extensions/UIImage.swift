@@ -9,7 +9,12 @@
 import UIKit
 
 extension UIImage {
-    
+    static let crossMarkFill = UIImage(systemName: "xmark.circle.fill")
+    static let someImage = UIImage(named: "some_image_name_from_asset")
+}
+
+extension UIImage {
+
     func croppedImage(bound : CGRect) -> UIImage {
         let scaledBounds = CGRect(x:bound.origin.x * self.scale, y:bound.origin.y * self.scale, width:bound.size.width * self.scale, height:bound.size.height * self.scale)
         let imageRef = cgImage?.cropping(to:scaledBounds)
@@ -67,19 +72,6 @@ extension UIImage {
         let cropped : UIImage = UIImage(cgImage: imageRef, scale: self.scale, orientation: self.imageOrientation)
         
         return cropped
-    }
-    
-    func merge(image: UIImage, alpha: CGFloat) -> UIImage {
-        print("Merge 2 images ...")
-        let size = self.size
-        print("Size 1 = \(size), size 2 = \(image.size)")
-        print("Scale 1 = \(self.scale), scale 2 = \(image.scale)")
-        UIGraphicsBeginImageContextWithOptions(size, false, self.scale)
-        draw(at: .zero)
-        image.draw(at: .zero, blendMode: .normal, alpha: alpha)
-        let result = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return result!
     }
     
     func resize(newSize: CGSize) -> UIImage {

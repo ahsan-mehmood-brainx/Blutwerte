@@ -127,19 +127,6 @@ extension UIView {
         layer.maskedCorners = maskedCorners
     }
     
-    func makeRoundCornersWithBorder(cornerRadius: CGFloat,
-                                    maskedCorners: CACornerMask = [.layerMinXMinYCorner,
-                                                                   .layerMaxXMinYCorner,
-                                                                   .layerMinXMaxYCorner,
-                                                                   .layerMaxXMaxYCorner],
-                                    borderColor: UIColor = .clear,
-                                    borderWidth: CGFloat = 0.5)
-    {
-        makeRoundCorners(cornerRadius: cornerRadius, maskedCorners: maskedCorners)
-        layer.borderColor = borderColor.cgColor
-        layer.borderWidth = borderWidth
-    }
-    
     func addDashedBorder(strokeColor: UIColor, lineWidth: CGFloat) {
         self.layoutIfNeeded()
         let strokeColor = strokeColor.cgColor
@@ -204,7 +191,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var setGetCornerRadius: CGFloat {
+    @IBInspectable var cornerRadius: CGFloat {
         get {
             return self.layer.cornerRadius
         }

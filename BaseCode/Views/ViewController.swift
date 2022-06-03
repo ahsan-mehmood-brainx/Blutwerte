@@ -11,8 +11,5 @@ import UIKit
 class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        showToastView(withTitle: "Sucess", withMessage: "Your project has beed setup sucessfully.") { button in
-            button.tintColor = .systemYellow
-        }
     }
 }

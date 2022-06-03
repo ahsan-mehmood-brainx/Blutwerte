@@ -11,9 +11,9 @@ import ObjectMapper
 
 class AppError: Mappable, Error {
     var message: String?
-    var code = 500
+    var code = 600
     
-    init(message: String? = nil, code: Int = 500) {
+    init(message: String? = nil, code: Int = 600) {
         self.message = message
         self.code = code
     }

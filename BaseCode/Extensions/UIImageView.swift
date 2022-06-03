@@ -10,16 +10,8 @@ import UIKit
 
 extension UIImageView {
     
-    func addBlurEffect() {
-        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = self.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.addSubview(blurEffectView)
-    }
-    
+    /// height and width should be the same
     func roundImage() {
-        //height and width should be the same
         self.layer.masksToBounds = true
         self.layer.cornerRadius = self.frame.size.width / 2
     }
