@@ -9,6 +9,6 @@
 import UIKit
 
 struct Images {
-    static let someImage = UIImage(named: "some_image_name_from_asset")
+    static let someImage = "some_image_name_from_asset"
 }
 
