@@ -52,7 +52,7 @@ extension String {
                 if $0.count <= 1 {
                     return $0.uppercased()
                 } else {
-                    if $0.index(of: "-") != nil {
+                    if $0.firstIndex(of: "-") != nil {
                         return $0.components(separatedBy: "-").map { $0.pascalCase }.joined(separator: "-")
                     } else {
                         return $0.capitalized
@@ -242,6 +242,11 @@ extension String {
         currencyFormatter.numberStyle = .currency
         return currencyFormatter.string(from: NSNumber(value: floatValue))
     }
-    
+ 
+    func localized(_ lang: String) -> String {
+        let path = Bundle.main.path(forResource: lang, ofType: "lproj")
+        let bundle = Bundle(path: path!)
+        return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
+    }
 }
 
