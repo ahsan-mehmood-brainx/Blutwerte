@@ -9,18 +9,17 @@
 import UIKit
 
 extension UITableView {
-
-    func setAndLayoutTableHeaderView(header: UIView) {
-        self.tableHeaderView = header
-        header.setNeedsLayout()
-        header.layoutIfNeeded()
-        let height = header.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
-        var frame = header.frame
-        frame.size.height = height
-        header.frame = frame
-        self.tableHeaderView = header
+    
+    ///usage: let cell: CustomTableViewCell = tableView.dequeueReusableCell()
+    func dequeueReusableCell<T: UITableViewCell>() -> T {
+        return self.dequeueReusableCell(withIdentifier: String(describing: T.self)) as! T
     }
     
+    ///usage let cell: CustomTableViewCell = tableView.dequeueCell(for: indexPath)
+    func dequeueCell<T: UITableViewCell>(for indexpath: IndexPath) -> T {
+        return dequeueReusableCell(withIdentifier: String(describing: T.self), for: indexpath) as! T
+    }
+        
     func reloadRowsInSection(section: Int, oldCount:Int, newCount: Int){
         
         let maxCount = max(oldCount, newCount)
