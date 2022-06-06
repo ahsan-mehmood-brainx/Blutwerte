@@ -35,7 +35,7 @@ class BaseViewController: UIViewController {
     }
     
     func addCrossLeftBarItem(_ action: Selector) {
-        let leftItem = UIBarButtonItem(image: UIImage.crossMarkFill?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: action)
+        let leftItem = UIBarButtonItem(image: UIImage(systemName: "xmark.circle.fill")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: action)
         navigationItem.leftBarButtonItem = leftItem
     }
     

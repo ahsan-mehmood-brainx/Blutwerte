@@ -13,12 +13,13 @@ class AppCoordinator: Coordinator {
     
     init(window: UIWindow) {
         self.window = window
-        let viewController = ViewController.instantiate(from: .main)
-        self.navigationController  = UINavigationController(rootViewController: viewController)
-        window.rootViewController =  self.navigationController
+        self.navigationController = UINavigationController()
     }
     
     func start() {
+        let viewController = ViewController.instantiate(from: .main)
+        self.navigationController  = UINavigationController(rootViewController: viewController)
+        window.rootViewController =  self.navigationController
         window.makeKeyAndVisible()
     }
 }
