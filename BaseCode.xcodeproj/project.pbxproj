@@ -401,7 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"-x /opt/homebrew/bin/swiftgen\" ]\nthen\n    \"/opt/homebrew/bin/swiftgen\"\nelse\n    echo \"warning: SwiftGen is not installed. You can install it using Homebrew: 'brew install swiftgen'\"\nfi\n\n";
+			shellScript = "if [ \"-x /usr/local/bin/swiftgen\" ]\nthen\n    \"/usr/local/bin/swiftgen\"\nelse\n    echo \"warning: SwiftGen is not installed. You can install it using Homebrew: 'brew install swiftgen'\"\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
