@@ -10,5 +10,7 @@ import Foundation
 struct Config {
 
     static let fontFamily = "Arial"
-
+    static let sfProText = "SFProText"
+    static let sfProDisplay = "SFProDisplay"
+    
 }

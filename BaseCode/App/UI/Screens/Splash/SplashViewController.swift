@@ -24,13 +24,12 @@ class SplashViewController: ViewController<SplashViewModel> {
     
     @objc
     private func moveToNextScreen() {
-        print("d:D")
+        viewModel.moveToNextScreen()
     }
     
     //MARK: - Private Methods
     
     private func initialSetup() {
-        splashView.splashAnimation.contentMode = .scaleAspectFit
         splashView.splashAnimation.play()
         Timer.scheduledTimer(
             timeInterval: 3.6,
@@ -39,6 +38,5 @@ class SplashViewController: ViewController<SplashViewModel> {
             userInfo: nil,
             repeats: false
         )
-        print("d:",splashView.splashAnimation.)
     }
 }

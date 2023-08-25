@@ -38,9 +38,18 @@ extension UIFont.Weight {
 
 extension UIFont {
 
-    func current(withWeight weight: Weight, andSize size: CGFloat) -> UIFont {
+    static func current(withWeight weight: Weight, andSize size: CGFloat) -> UIFont {
         let fontName = "\(Config.fontFamily)-\(weight.name)"
         return UIFont(name: fontName, size: size)!
     }
-
+    
+    static func sfProText(withWeight weight: Weight, andSize size: CGFloat) -> UIFont {
+        let fontName = "\(Config.sfProText)-\(weight.name)"
+        return UIFont(name: fontName, size: size)!
+    }
+    
+    static func sfProDisplay(withWeight weight: Weight, andSize size: CGFloat) -> UIFont {
+        let fontName = "\(Config.sfProDisplay)-\(weight.name)"
+        return UIFont(name: fontName, size: size)!
+    }
 }

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="BaseCode" customModuleProvider="target">
             <connections>
-                <outlet property="splashView" destination="i5M-Pr-FkT" id="tUJ-WU-3Y8"/>
+                <outlet property="splashView" destination="i5M-Pr-FkT" id="rY6-W0-Sf6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -37,7 +37,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5u8-2R-kB1" secondAttribute="trailing" constant="16" id="llx-nv-PLn"/>
             </constraints>
             <connections>
-                <outlet property="splashAnimation" destination="5u8-2R-kB1" id="q9K-Mr-izA"/>
+                <outlet property="splashAnimation" destination="5u8-2R-kB1" id="QMf-9h-H0d"/>
             </connections>
             <point key="canvasLocation" x="-144" y="20"/>
         </view>
