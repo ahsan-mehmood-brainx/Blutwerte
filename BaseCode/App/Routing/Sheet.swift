@@ -9,12 +9,13 @@ import UIKit
 
 enum Sheet {
 
-    case confirmation
+    case ageSelection
 
     func controller() -> UIViewController {
         switch self {
-        case .confirmation:
-            return UIViewController()
+        case .ageSelection:
+            let viewModel = AgeSelectionViewModel()
+            return AgeSelectionViewController(viewModel: viewModel)
         }
     }
 }

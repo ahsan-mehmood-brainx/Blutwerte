@@ -19,3 +19,12 @@
 "onboarding3Description" = "Get all the important information about your lab values";
 "onboarding4Title" = "Here we go!";
 "onboarding4Description" = "Just quickly create a profile and you're ready to go";
+"createProfile" = "Create profile";
+"name" = "Name";
+"age" = "Age";
+"gender" = "Gender";
+"male" = "Male";
+"female" = "Female";
+"genderDescription" = "Based on your age and biological sex, we show you our reference values.";
+"add" = "Add";
+"selectYourAge" = "Select Your Age";

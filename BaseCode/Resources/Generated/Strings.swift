@@ -13,14 +13,30 @@ internal enum L10n {
   internal enum InfoPlist {
     }
   internal enum Localizable {
+    /// Add
+    internal static let add = L10n.tr("Localizable", "add", fallback: "Add")
+    /// Age
+    internal static let age = L10n.tr("Localizable", "age", fallback: "Age")
     /// Cancel
     internal static let cancel = L10n.tr("Localizable", "cancel", fallback: "Cancel")
     /// Continue
     internal static let `continue` = L10n.tr("Localizable", "continue", fallback: "Continue")
+    /// Create profile
+    internal static let createProfile = L10n.tr("Localizable", "createProfile", fallback: "Create profile")
     /// Error
     internal static let error = L10n.tr("Localizable", "error", fallback: "Error")
+    /// Female
+    internal static let female = L10n.tr("Localizable", "female", fallback: "Female")
+    /// Gender
+    internal static let gender = L10n.tr("Localizable", "gender", fallback: "Gender")
+    /// Based on your age and biological sex, we show you our reference values.
+    internal static let genderDescription = L10n.tr("Localizable", "genderDescription", fallback: "Based on your age and biological sex, we show you our reference values.")
     /// Get Started
     internal static let getStarted = L10n.tr("Localizable", "getStarted", fallback: "Get Started")
+    /// Male
+    internal static let male = L10n.tr("Localizable", "male", fallback: "Male")
+    /// Name
+    internal static let name = L10n.tr("Localizable", "name", fallback: "Name")
     /// Localizable.strings
     ///   BaseCode
     /// 
@@ -42,6 +58,8 @@ internal enum L10n {
     internal static let onboarding4Description = L10n.tr("Localizable", "onboarding4Description", fallback: "Just quickly create a profile and you're ready to go")
     /// Here we go!
     internal static let onboarding4Title = L10n.tr("Localizable", "onboarding4Title", fallback: "Here we go!")
+    /// Select Your Age
+    internal static let selectYourAge = L10n.tr("Localizable", "selectYourAge", fallback: "Select Your Age")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

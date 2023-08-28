@@ -40,6 +40,10 @@
 		18209EE22A7260B70024F47B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE12A7260B70024F47B /* UIView.swift */; };
 		18209EE42A7260D30024F47B /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE32A7260D30024F47B /* XibView.swift */; };
 		18209EE72A7261C30024F47B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE62A7261C30024F47B /* Storage.swift */; };
+		4347E03A2A9C65F50082A3B1 /* AgeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */; };
+		4347E0402A9C66130082A3B1 /* AgeSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */; };
+		4347E0442A9C768B0082A3B1 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */; };
+		4347E0452A9C768B0082A3B1 /* AgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E0432A9C768B0082A3B1 /* AgeSelectionViewController.xib */; };
 		43B3E6062A961E1000F8247A /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6052A961E1000F8247A /* splash.json */; };
 		43B3E6092A961E8B00F8247A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 43B3E6082A961E8B00F8247A /* Lottie */; };
 		43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6112A96290F00F8247A /* OnboardingView.swift */; };
@@ -63,6 +67,10 @@
 		43B3E6452A98A67100F8247A /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6442A98A67000F8247A /* Onboarding.swift */; };
 		43D001F52A98AF1300E9729C /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D001F42A98AF1300E9729C /* UserRepository.swift */; };
 		43D001F92A98B6AC00E9729C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D001F82A98B6AC00E9729C /* AppConstants.swift */; };
+		43D001FC2A98C26C00E9729C /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D001FB2A98C26C00E9729C /* CreateProfileView.swift */; };
+		43D001FF2A98C28300E9729C /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D001FD2A98C28300E9729C /* CreateProfileViewController.swift */; };
+		43D002002A98C28300E9729C /* CreateProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D001FE2A98C28300E9729C /* CreateProfileViewController.xib */; };
+		43D002022A98C2AA00E9729C /* CreateProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D002012A98C2AA00E9729C /* CreateProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +107,10 @@
 		18209EE12A7260B70024F47B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		18209EE32A7260D30024F47B /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionView.swift; sourceTree = "<group>"; };
+		4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewModel.swift; sourceTree = "<group>"; };
+		4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
+		4347E0432A9C768B0082A3B1 /* AgeSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeSelectionViewController.xib; sourceTree = "<group>"; };
 		43B3E6052A961E1000F8247A /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		43B3E6112A96290F00F8247A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		43B3E6132A96291B00F8247A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +133,10 @@
 		43B3E6442A98A67000F8247A /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		43D001F42A98AF1300E9729C /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		43D001F82A98B6AC00E9729C /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		43D001FB2A98C26C00E9729C /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		43D001FD2A98C28300E9729C /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		43D001FE2A98C28300E9729C /* CreateProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateProfileViewController.xib; sourceTree = "<group>"; };
+		43D002012A98C2AA00E9729C /* CreateProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +228,7 @@
 				18209EA22A714A0F0024F47B /* Base */,
 				43B3E62C2A9795B000F8247A /* Components */,
 				18209EAA2A714C840024F47B /* Screens */,
-				18209EAB2A714C8B0024F47B /* Sheets */,
+				4347E0412A9C6C8B0082A3B1 /* Sheets */,
 				18209ECF2A72596D0024F47B /* Storyboards */,
 			);
 			path = UI;
@@ -269,17 +285,11 @@
 		18209EAA2A714C840024F47B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				43B3E60C2A9628E000F8247A /* Onboarding */,
 				18209EC82A7257110024F47B /* Splash */,
+				43B3E60C2A9628E000F8247A /* Onboarding */,
+				43D001FA2A98C24200E9729C /* CreateProfile */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		18209EAB2A714C8B0024F47B /* Sheets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sheets;
 			sourceTree = "<group>";
 		};
 		18209EAC2A714EF90024F47B /* Repositories */ = {
@@ -344,6 +354,25 @@
 				18209EE62A7261C30024F47B /* Storage.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4347E0382A9C658A0082A3B1 /* AgeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */,
+				4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */,
+				4347E0432A9C768B0082A3B1 /* AgeSelectionViewController.xib */,
+				4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */,
+			);
+			path = AgeSelection;
+			sourceTree = "<group>";
+		};
+		4347E0412A9C6C8B0082A3B1 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				4347E0382A9C658A0082A3B1 /* AgeSelection */,
+			);
+			path = Sheets;
 			sourceTree = "<group>";
 		};
 		43B3E6042A961DF200F8247A /* Lottie Files */ = {
@@ -420,6 +449,17 @@
 				43B3E6442A98A67000F8247A /* Onboarding.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		43D001FA2A98C24200E9729C /* CreateProfile */ = {
+			isa = PBXGroup;
+			children = (
+				43D001FB2A98C26C00E9729C /* CreateProfileView.swift */,
+				43D001FD2A98C28300E9729C /* CreateProfileViewController.swift */,
+				43D001FE2A98C28300E9729C /* CreateProfileViewController.xib */,
+				43D002012A98C2AA00E9729C /* CreateProfileViewModel.swift */,
+			);
+			path = CreateProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,9 +547,11 @@
 				43B3E6402A97AA7100F8247A /* dna.json in Resources */,
 				43B3E6272A962BF000F8247A /* SF-Pro-Display-Bold.otf in Resources */,
 				43B3E63E2A97A8F100F8247A /* OnboardingCollectionViewCell.xib in Resources */,
+				43D002002A98C28300E9729C /* CreateProfileViewController.xib in Resources */,
 				43B3E6242A962BF000F8247A /* SF-Pro-Display-Regular.otf in Resources */,
 				43B3E6392A97A37900F8247A /* OnboardingViewController.xib in Resources */,
 				18209EAE2A7245330024F47B /* swiftgen.yml in Resources */,
+				4347E0452A9C768B0082A3B1 /* AgeSelectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,16 +600,22 @@
 				18209E7F2A7146690024F47B /* AppDelegate.swift in Sources */,
 				43B3E6452A98A67100F8247A /* Onboarding.swift in Sources */,
 				43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */,
+				4347E0442A9C768B0082A3B1 /* AgeSelectionViewController.swift in Sources */,
 				43B3E6292A976CA300F8247A /* SplashView.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
 				43B3E6422A97B29B00F8247A /* Images.swift in Sources */,
+				43D002022A98C2AA00E9729C /* CreateProfileViewModel.swift in Sources */,
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,
+				43D001FC2A98C26C00E9729C /* CreateProfileView.swift in Sources */,
 				18209ED42A725C770024F47B /* UIFont.swift in Sources */,
 				18209EA42A714A250024F47B /* ViewController.swift in Sources */,
+				4347E0402A9C66130082A3B1 /* AgeSelectionViewModel.swift in Sources */,
 				18209ECE2A7257B90024F47B /* SplashViewModel.swift in Sources */,
+				43D001FF2A98C28300E9729C /* CreateProfileViewController.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
+				4347E03A2A9C65F50082A3B1 /* AgeSelectionView.swift in Sources */,
 				18209E812A7146690024F47B /* SceneDelegate.swift in Sources */,
 				18209ED62A725CD40024F47B /* Config.swift in Sources */,
 				18209EA82A714AB30024F47B /* UIViewController.swift in Sources */,

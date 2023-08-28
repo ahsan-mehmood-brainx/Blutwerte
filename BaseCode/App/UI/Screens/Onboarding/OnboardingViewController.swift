@@ -24,6 +24,7 @@ class OnboardingViewController: ViewController<OnboardingViewModel> {
     //MARK: - Action Methods
     
     @IBAction func actionButtonTapped(_ sender: Any) {
+        viewModel.router.append(.createProfile)
     }
     
     

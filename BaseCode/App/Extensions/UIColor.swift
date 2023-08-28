@@ -11,8 +11,13 @@ extension UIColor {
     
     static let astral = UIColor(hex: "#3176A7")
     static let whiteCustom = UIColor(hex: "#FFFFFF")
+    static let blackCustom = UIColor(hex: "#000000")
     static let whiteLilac = UIColor(hex: "#F5F7FB")
     static let hoki = UIColor(hex: "#63839A")
+    static let bayOfMany = UIColor(hex: "#205072")
+    static let ghost = UIColor(hex: "#BDC2CD")
+    static let paleSky = UIColor(hex: "#66727F")
+    static let silverChalice = UIColor(hex: "#9D9D9D")
     
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var sanitizedHex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

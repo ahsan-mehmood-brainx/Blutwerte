@@ -93,4 +93,9 @@ extension UIView {
         layer.shadowOpacity = alpha
         layer.shadowRadius = radius
     }
+    
+    func clearBorder() {
+        layer.borderColor = UIColor.clear.cgColor
+        layer.borderWidth = 0
+    }
 }

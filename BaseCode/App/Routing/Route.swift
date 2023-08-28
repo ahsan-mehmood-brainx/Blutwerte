@@ -11,6 +11,7 @@ enum Route {
 
     case splash
     case onboarding
+    case createProfile
 
     func controller() -> UIViewController {
         switch self {
@@ -20,6 +21,9 @@ enum Route {
         case .onboarding:
             let viewModel = OnboardingViewModel()
             return OnboardingViewController(viewModel: viewModel)
+        case .createProfile:
+            let viewModel = CreateProfileViewModel()
+            return CreateProfileViewController(viewModel: viewModel)
         }
     }
 }
