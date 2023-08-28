@@ -52,7 +52,7 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     @objc
     func ageViewTapped() {
-        viewModel.router.showSheet(.ageSelection)
+        viewModel.handleAgeViewTapped()
     }
     
     @objc
@@ -71,6 +71,9 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     private func initialSetup() {
         profileView.setupGenderView(isMale: isMale)
         updateNameCount(AppConstants.empty)
+        viewModel.ageUpdated = {
+            self.profileView.ageTextField.text = String(self.viewModel.age)
+        }
     }
     
     private func addTargets() {

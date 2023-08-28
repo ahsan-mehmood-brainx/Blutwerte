@@ -9,9 +9,14 @@ import Foundation
 
 class AgeSelectionViewModel: ViewModel {
     
-    //MARK: Methods
+    //MARK: - Properties
     
-    func dimissView() {
-        router.dismiss()
+    var selectedRow = 0
+    var ageClosure: ((_ age: Int) -> Void)?
+    
+    //MARK: - Methods
+    
+    func handleDimiss() {
+        ageClosure?(selectedRow + 1)
     }
 }

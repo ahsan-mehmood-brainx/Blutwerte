@@ -9,12 +9,14 @@ import UIKit
 
 enum Sheet {
 
-    case ageSelection
+    case ageSelection(age: Int, ageDismissClosure: ((_ age: Int) -> Void))
 
     func controller() -> UIViewController {
         switch self {
-        case .ageSelection:
+        case let .ageSelection(age, ageDismissClosure):
             let viewModel = AgeSelectionViewModel()
+            viewModel.selectedRow = age - 1
+            viewModel.ageClosure = ageDismissClosure
             return AgeSelectionViewController(viewModel: viewModel)
         }
     }

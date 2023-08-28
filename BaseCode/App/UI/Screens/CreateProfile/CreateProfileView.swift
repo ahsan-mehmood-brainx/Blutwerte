@@ -105,6 +105,7 @@ class CreateProfileView: UIView {
         
         ageTextField.font = .sfProText(withWeight: .regular, andSize: 14)
         ageTextField.textColor = .paleSky
+        ageTextField.isUserInteractionEnabled = false
         
         genderTitle.textColor = .paleSky
         genderTitle.font = .sfProText(withWeight: .regular, andSize: 14)

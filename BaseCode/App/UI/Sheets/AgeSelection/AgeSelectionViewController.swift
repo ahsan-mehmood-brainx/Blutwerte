@@ -13,24 +13,18 @@ class AgeSelectionViewController: ViewController<AgeSelectionViewModel> {
     
     @IBOutlet var ageSelectionView: AgeSelectionView!
     
-    //MARK: - Properties
-    
-    private var selectedRow = 0
-    var ageClosure: ((_ age: Int) -> Void)?
-    
     //MARK: - Lifecycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         initialSetup()
-        addTargets()
+        configurePresentation()
     }
     
-    //MARK: - Action Methods
-    
-    @objc
-    func dismissViewTapped() {
-        viewModel.dimissView()
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewModel.handleDimiss()
     }
     
     //MARK: - Private Methods
@@ -38,14 +32,15 @@ class AgeSelectionViewController: ViewController<AgeSelectionViewModel> {
     private func initialSetup() {
         ageSelectionView.agePickerView.dataSource = self
         ageSelectionView.agePickerView.delegate = self
+        ageSelectionView.setupPicker(age: viewModel.selectedRow + 1)
     }
     
-    private func addTargets() {
-        ageSelectionView.backgroundView.addGestureRecognizer(
-            UITapGestureRecognizer(target: self,
-                                   action: #selector(dismissViewTapped))
-        )
-        
+    private func configurePresentation() {
+        let presentationController = presentationController as? UISheetPresentationController
+        presentationController?.detents = [.custom(resolver: { _ in
+            300
+        })]
+        presentationController?.prefersGrabberVisible = true
     }
 }
 
@@ -71,7 +66,6 @@ extension AgeSelectionViewController: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedRow = row
-        pickerView.reloadAllComponents()
+        viewModel.selectedRow = row
     }
 }

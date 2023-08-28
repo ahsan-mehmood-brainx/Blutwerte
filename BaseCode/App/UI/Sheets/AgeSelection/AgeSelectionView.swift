@@ -11,7 +11,6 @@ class AgeSelectionView: UIView {
     
     //MARK: - Outlets
     
-    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var contententView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var agePickerView: UIPickerView!
@@ -23,11 +22,18 @@ class AgeSelectionView: UIView {
         initialSetup()
     }
     
+    //MARK: - Public Methods
+    
+    func setupPicker(age: Int) {
+        guard age > 0, age <= 100 else {
+            return
+        }
+        agePickerView.selectRow(age - 1, inComponent: 0, animated: true)
+    }
+    
     //MARK: - Private Methods
     
     private func initialSetup() {
-        backgroundView.backgroundColor = .clear
-        
         contententView.backgroundColor = .whiteLilac
         contententView.clipsToBounds = true
         contententView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
@@ -36,7 +42,5 @@ class AgeSelectionView: UIView {
         titleLabel.text = L10n.Localizable.selectYourAge
         titleLabel.font = .sfProText(withWeight: .medium, andSize: 16)
         titleLabel.textColor = .blackCustom
-        
-        
     }
 }
