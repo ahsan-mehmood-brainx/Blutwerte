@@ -40,22 +40,23 @@ class CreateProfileView: UIView {
     
     //MARK: - Public Methods
     
-    func setupGenderView(isMale: Bool) {
+    func setupGenderView(_ gender: Gender) {
         [maleView, femaleView].forEach {
             $0?.clearBorder()
         }
         [maleLabel, femaleLabel].forEach {
             $0?.textColor = .paleSky
         }
-        guard isMale else {
+        switch gender {
+        case .male:
+            maleView.layer.borderWidth = 2
+            maleView.layer.borderColor = UIColor.astral.cgColor
+            maleLabel.textColor = .blackCustom
+        case .female:
             femaleView.layer.borderWidth = 2
             femaleView.layer.borderColor = UIColor.astral.cgColor
             femaleLabel.textColor = .blackCustom
-            return
         }
-        maleView.layer.borderWidth = 2
-        maleView.layer.borderColor = UIColor.astral.cgColor
-        maleLabel.textColor = .blackCustom
     }
     
     //MARK: - Private Methods
@@ -112,13 +113,15 @@ class CreateProfileView: UIView {
         genderTitle.text = L10n.Localizable.gender
         
         maleView.layer.cornerRadius = 12
+        maleView.tag = Gender.male.rawValue
         
-        maleLabel.text = L10n.Localizable.male
+        maleLabel.text = Gender.male.title
         maleLabel.font = .sfProText(withWeight: .regular, andSize: 14)
         
         femaleView.layer.cornerRadius = 12
+        femaleView.tag = Gender.female.rawValue
         
-        femaleLabel.text = L10n.Localizable.female
+        femaleLabel.text = Gender.female.title
         femaleLabel.font = .sfProText(withWeight: .regular, andSize: 14)
         
         descriptionView.backgroundColor = .whiteLilac

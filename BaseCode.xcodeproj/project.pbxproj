@@ -48,6 +48,7 @@
 		4347E04B2A9C8EF70082A3B1 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0492A9C8EF70082A3B1 /* AvatarViewController.swift */; };
 		4347E04C2A9C8EF70082A3B1 /* AvatarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E04A2A9C8EF70082A3B1 /* AvatarViewController.xib */; };
 		4347E04E2A9C8F520082A3B1 /* AvatarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E04D2A9C8F520082A3B1 /* AvatarViewModel.swift */; };
+		4347E0512A9CBAA90082A3B1 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0502A9CBAA90082A3B1 /* Gender.swift */; };
 		43B3E6062A961E1000F8247A /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6052A961E1000F8247A /* splash.json */; };
 		43B3E6092A961E8B00F8247A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 43B3E6082A961E8B00F8247A /* Lottie */; };
 		43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6112A96290F00F8247A /* OnboardingView.swift */; };
@@ -119,6 +120,7 @@
 		4347E0492A9C8EF70082A3B1 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
 		4347E04A2A9C8EF70082A3B1 /* AvatarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarViewController.xib; sourceTree = "<group>"; };
 		4347E04D2A9C8F520082A3B1 /* AvatarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewModel.swift; sourceTree = "<group>"; };
+		4347E0502A9CBAA90082A3B1 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		43B3E6052A961E1000F8247A /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		43B3E6112A96290F00F8247A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		43B3E6132A96291B00F8247A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		18209E9C2A7149BB0024F47B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4347E04F2A9CBA9D0082A3B1 /* Enums */,
 				43B3E6432A98938200F8247A /* Models */,
 				18209EE52A7261A50024F47B /* Utilities */,
 				18209EAC2A714EF90024F47B /* Repositories */,
@@ -393,6 +396,14 @@
 				4347E04D2A9C8F520082A3B1 /* AvatarViewModel.swift */,
 			);
 			path = Avatar;
+			sourceTree = "<group>";
+		};
+		4347E04F2A9CBA9D0082A3B1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4347E0502A9CBAA90082A3B1 /* Gender.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		43B3E6042A961DF200F8247A /* Lottie Files */ = {
@@ -615,6 +626,7 @@
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				43B3E6142A96291B00F8247A /* OnboardingViewModel.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
+				4347E0512A9CBAA90082A3B1 /* Gender.swift in Sources */,
 				4347E04B2A9C8EF70082A3B1 /* AvatarViewController.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
 				4347E0482A9C8EE70082A3B1 /* AvatarView.swift in Sources */,

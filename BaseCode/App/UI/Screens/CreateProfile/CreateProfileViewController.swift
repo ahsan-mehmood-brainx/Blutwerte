@@ -17,9 +17,9 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     private var currentCount: Int = 0
     private let maxCount: Int = 15
-    private var isMale: Bool = true {
+    private var gender: Gender = .male {
         didSet {
-            profileView.setupGenderView(isMale: isMale)
+            profileView.setupGenderView(gender)
         }
     }
     
@@ -29,6 +29,15 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
         super.viewDidLoad()
         initialSetup()
         addTargets()
+    }
+    
+    override func setupBinding() {
+        viewModel
+            .$age
+            .sink { [weak self] age in
+                self?.profileView.ageTextField.text = String(age)
+            }
+            .store(in: &bag)
     }
     
     //MARK: - Action Methods
@@ -56,24 +65,21 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     }
     
     @objc
-    func maleButtonTapped() {
-        isMale = true
-    }
-    
-    @objc
-    func femaleButtonTapped() {
-        isMale = false
+    func genderViewTapped(_ sender: UITapGestureRecognizer) {
+        guard let tag = sender.view?.tag,
+              let gender = Gender(rawValue: tag),
+              self.gender != gender else {
+            return
+        }
+        self.gender = gender
     }
     
     
     //MARK: - Private Methods
     
     private func initialSetup() {
-        profileView.setupGenderView(isMale: isMale)
+        profileView.setupGenderView(gender)
         updateNameCount(AppConstants.empty)
-        viewModel.ageUpdated = {
-            self.profileView.ageTextField.text = String(self.viewModel.age)
-        }
     }
     
     private func addTargets() {
@@ -83,11 +89,11 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
         )
         profileView.maleView.addGestureRecognizer(
             UITapGestureRecognizer(target: self,
-                                   action: #selector(maleButtonTapped))
+                                   action: #selector(genderViewTapped))
         )
         profileView.femaleView.addGestureRecognizer(
             UITapGestureRecognizer(target: self,
-                                   action: #selector(femaleButtonTapped))
+                                   action: #selector(genderViewTapped))
         )
     }
     
