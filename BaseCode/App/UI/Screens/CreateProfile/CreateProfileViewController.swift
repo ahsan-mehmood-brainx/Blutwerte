@@ -13,16 +13,6 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     @IBOutlet var profileView: CreateProfileView!
     
-    //MARK: - Properties
-    
-    private var currentCount: Int = 0
-    private let maxCount: Int = 15
-    private var gender: Gender = .male {
-        didSet {
-            profileView.setupGenderView(gender)
-        }
-    }
-    
     //MARK: - Lifecycle Methods
     
     override func viewDidLoad() {
@@ -36,6 +26,12 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
             .$age
             .sink { [weak self] age in
                 self?.profileView.ageTextField.text = String(age)
+            }
+            .store(in: &bag)
+        viewModel
+            .$gender
+            .sink { [weak self] gender in
+                self?.profileView.setupGenderView(gender)
             }
             .store(in: &bag)
     }
@@ -68,17 +64,17 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     func genderViewTapped(_ sender: UITapGestureRecognizer) {
         guard let tag = sender.view?.tag,
               let gender = Gender(rawValue: tag),
-              self.gender != gender else {
+              viewModel.gender != gender else {
             return
         }
-        self.gender = gender
+        viewModel.gender = gender
     }
     
     
     //MARK: - Private Methods
     
     private func initialSetup() {
-        profileView.setupGenderView(gender)
+        profileView.setupGenderView(viewModel.gender)
         updateNameCount(AppConstants.empty)
     }
     
@@ -98,13 +94,13 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     }
     
     private func updateNameCount(_ text: String) {
-        currentCount = text.count
-        guard currentCount <= maxCount else {
-            currentCount = maxCount
-            profileView.countLabel.text = String(maxCount - currentCount)
-            profileView.nameTextField.text = String(text.prefix(maxCount))
+        viewModel.currentNameCount = text.count
+        guard viewModel.currentNameCount <= viewModel.maxNameCount else {
+            viewModel.currentNameCount = viewModel.maxNameCount
+            profileView.countLabel.text = String(viewModel.maxNameCount - viewModel.currentNameCount)
+            profileView.nameTextField.text = String(text.prefix(viewModel.maxNameCount))
             return
         }
-        profileView.countLabel.text = String(maxCount - currentCount)
+        profileView.countLabel.text = String(viewModel.maxNameCount - viewModel.currentNameCount)
     }
 }

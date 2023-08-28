@@ -13,6 +13,9 @@ class CreateProfileViewModel: ViewModel {
     //MARK: - Properties
     
     @Published var age: Int = 0
+    @Published var gender: Gender = .male
+    var currentNameCount: Int = 0
+    let maxNameCount: Int = 15
     
     //MARK: - Methods
     
