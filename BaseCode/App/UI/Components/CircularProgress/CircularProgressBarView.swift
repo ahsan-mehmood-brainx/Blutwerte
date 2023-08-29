@@ -39,13 +39,8 @@ class CircularProgressBarView: UIView {
 
     //MARK: - Public Methods
 
-    func setProgressWithAnimation(duration: TimeInterval, value: Float) {
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.duration = duration
-        animation.toValue = value
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+    func setProgressWithAnimation(value: Float) {
         progressLayer.strokeEnd = CGFloat(value)
-        progressLayer.add(animation, forKey: "animateprogress")
     }
 
     //MARK: - Private Methods

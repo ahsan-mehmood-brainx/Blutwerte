@@ -23,6 +23,23 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     override func setupBinding() {
         viewModel
+            .$avatar
+            .sink { [weak self] avatar in
+                self?.profileView.avatorImageView.image = avatar?.image ?? UIImage(named: Images.profilePlaceholder)
+            }
+            .store(in: &bag)
+        viewModel
+            .$currentNameCount
+            .sink { [weak self] count in
+                guard let self = self else {
+                    return
+                }
+                self.profileView.countLabel.text = String(self.viewModel.maxNameCount - count)
+                self.profileView.countCircleProgressBarView.setProgressWithAnimation(
+                    value: Float(count) / Float(self.viewModel.maxNameCount))
+            }
+            .store(in: &bag)
+        viewModel
             .$age
             .sink { [weak self] age in
                 self?.profileView.ageTextField.text = String(age)
@@ -32,12 +49,6 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
             .$gender
             .sink { [weak self] gender in
                 self?.profileView.setupGenderView(gender)
-            }
-            .store(in: &bag)
-        viewModel
-            .$avatar
-            .sink { [weak self] avatar in
-                self?.profileView.avatorImageView.image = avatar?.image ?? UIImage(named: Images.profilePlaceholder)
             }
             .store(in: &bag)
     }
@@ -102,15 +113,10 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     private func updateNameCount(_ text: String) {
         viewModel.currentNameCount = text.count
-        guard viewModel.currentNameCount <= viewModel.maxNameCount else {
-            viewModel.currentNameCount = viewModel.maxNameCount
-            profileView.countLabel.text = String(viewModel.maxNameCount - viewModel.currentNameCount)
-            profileView.nameTextField.text = String(text.prefix(viewModel.maxNameCount))
+        guard viewModel.currentNameCount > viewModel.maxNameCount else {
             return
         }
-        profileView.countLabel.text = String(viewModel.maxNameCount - viewModel.currentNameCount)
-        profileView.countCircleProgressBarView.setProgressWithAnimation(
-            duration: 0.5,
-            value: Float(viewModel.currentNameCount) / Float(viewModel.maxNameCount))
+        viewModel.currentNameCount = viewModel.maxNameCount
+        profileView.nameTextField.text = String(text.prefix(viewModel.maxNameCount))
     }
 }

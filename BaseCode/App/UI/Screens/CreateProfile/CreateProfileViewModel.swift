@@ -15,7 +15,7 @@ class CreateProfileViewModel: ViewModel {
     @Published var age: Int = 0
     @Published var gender: Gender = .male
     @Published var avatar: Avatar?
-    var currentNameCount: Int = 0
+    @Published var currentNameCount: Int = 0
     let maxNameCount: Int = 15
     
     //MARK: - Methods
