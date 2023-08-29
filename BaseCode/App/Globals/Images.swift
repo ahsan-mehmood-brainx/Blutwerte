@@ -9,6 +9,7 @@ import UIKit
 
 struct Images {
     
+    static let profilePlaceholder = "profilePlaceholder"
     static let nextArrow = "nextArrow"
     static let heartCare = "heartCare"
     static let sheild = "sheild"

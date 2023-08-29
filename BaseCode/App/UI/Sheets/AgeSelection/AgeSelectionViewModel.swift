@@ -12,11 +12,11 @@ class AgeSelectionViewModel: ViewModel {
     //MARK: - Properties
     
     var selectedRow = 0
-    var ageClosure: ((_ age: Int) -> Void)?
+    var selectedAge: ((_ age: Int) -> Void)?
     
     //MARK: - Methods
     
     func handleDimiss() {
-        ageClosure?(selectedRow + 1)
+        selectedAge?(selectedRow + 1)
     }
 }

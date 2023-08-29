@@ -77,7 +77,7 @@ class AvatarViewController: ViewController<AvatarViewModel> {
             .store(in: &bag)
     }
     
-    //MARK: Action Methods
+    //MARK: - Action Methods
     
     @IBAction
     func closeButtonTapped(_ sender: Any) {
@@ -86,6 +86,7 @@ class AvatarViewController: ViewController<AvatarViewModel> {
     
     @IBAction
     func actionButtonTapped(_ sender: Any) {
+        viewModel.handleActionButtonTapped()
     }
     
     //MARK: - Private Methods

@@ -34,6 +34,12 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
                 self?.profileView.setupGenderView(gender)
             }
             .store(in: &bag)
+        viewModel
+            .$avatar
+            .sink { [weak self] avatar in
+                self?.profileView.avatorImageView.image = avatar?.image ?? UIImage(named: Images.profilePlaceholder)
+            }
+            .store(in: &bag)
     }
     
     //MARK: - Action Methods
