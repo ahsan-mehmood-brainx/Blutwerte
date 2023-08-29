@@ -34,9 +34,11 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
                 guard let self = self else {
                     return
                 }
+                self.profileView.nameTextField.text = self.viewModel.userName
                 self.profileView.countLabel.text = String(self.viewModel.maxNameCount - count)
                 self.profileView.countCircleProgressBarView.setProgressWithAnimation(
-                    value: Float(count) / Float(self.viewModel.maxNameCount))
+                    value: Float(count) / Float(self.viewModel.maxNameCount)
+                )
             }
             .store(in: &bag)
         viewModel
@@ -66,7 +68,7 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     @IBAction
     func nameTextFieldChanged(_ textField: UITextField) {
-        updateNameCount(textField.text ?? AppConstants.empty)
+        viewModel.userName = textField.text ?? AppConstants.empty
     }
     
     @IBAction
@@ -93,7 +95,7 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     private func initialSetup() {
         profileView.setupGenderView(viewModel.gender)
-        updateNameCount(AppConstants.empty)
+        viewModel.userName = AppConstants.empty
     }
     
     private func addTargets() {
@@ -109,14 +111,5 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
             UITapGestureRecognizer(target: self,
                                    action: #selector(genderViewTapped))
         )
-    }
-    
-    private func updateNameCount(_ text: String) {
-        viewModel.currentNameCount = text.count
-        guard viewModel.currentNameCount > viewModel.maxNameCount else {
-            return
-        }
-        viewModel.currentNameCount = viewModel.maxNameCount
-        profileView.nameTextField.text = String(text.prefix(viewModel.maxNameCount))
     }
 }

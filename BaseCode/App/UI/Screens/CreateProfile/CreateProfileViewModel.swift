@@ -16,7 +16,17 @@ class CreateProfileViewModel: ViewModel {
     @Published var gender: Gender = .male
     @Published var avatar: Avatar?
     @Published var currentNameCount: Int = 0
+    
     let maxNameCount: Int = 15
+    var userName: String = AppConstants.empty {
+        didSet {
+            currentNameCount = userName.count
+            if currentNameCount > maxNameCount {
+                userName = String(userName.prefix(maxNameCount))
+                currentNameCount = maxNameCount
+            }
+        }
+    }
     
     //MARK: - Methods
     
