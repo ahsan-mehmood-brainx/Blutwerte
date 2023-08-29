@@ -24,4 +24,8 @@ class CreateProfileViewModel: ViewModel {
             self?.age = age
         }))
     }
+    
+    func handleAddAvatarTapped() {
+        router.showSheet(.avatar)
+    }
 }

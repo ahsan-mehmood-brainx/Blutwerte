@@ -45,10 +45,12 @@
 		4347E0442A9C768B0082A3B1 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */; };
 		4347E0452A9C768B0082A3B1 /* AgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E0432A9C768B0082A3B1 /* AgeSelectionViewController.xib */; };
 		4347E0482A9C8EE70082A3B1 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0472A9C8EE70082A3B1 /* AvatarView.swift */; };
-		4347E04B2A9C8EF70082A3B1 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0492A9C8EF70082A3B1 /* AvatarViewController.swift */; };
-		4347E04C2A9C8EF70082A3B1 /* AvatarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E04A2A9C8EF70082A3B1 /* AvatarViewController.xib */; };
 		4347E04E2A9C8F520082A3B1 /* AvatarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E04D2A9C8F520082A3B1 /* AvatarViewModel.swift */; };
 		4347E0512A9CBAA90082A3B1 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0502A9CBAA90082A3B1 /* Gender.swift */; };
+		4347E0542A9CDFEE0082A3B1 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0522A9CDFEE0082A3B1 /* AvatarViewController.swift */; };
+		4347E0552A9CDFEE0082A3B1 /* AvatarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E0532A9CDFEE0082A3B1 /* AvatarViewController.xib */; };
+		4347E0592A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0572A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift */; };
+		4347E05A2A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E0582A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib */; };
 		43B3E6062A961E1000F8247A /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6052A961E1000F8247A /* splash.json */; };
 		43B3E6092A961E8B00F8247A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 43B3E6082A961E8B00F8247A /* Lottie */; };
 		43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6112A96290F00F8247A /* OnboardingView.swift */; };
@@ -117,10 +119,12 @@
 		4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
 		4347E0432A9C768B0082A3B1 /* AgeSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeSelectionViewController.xib; sourceTree = "<group>"; };
 		4347E0472A9C8EE70082A3B1 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
-		4347E0492A9C8EF70082A3B1 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
-		4347E04A2A9C8EF70082A3B1 /* AvatarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarViewController.xib; sourceTree = "<group>"; };
 		4347E04D2A9C8F520082A3B1 /* AvatarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewModel.swift; sourceTree = "<group>"; };
 		4347E0502A9CBAA90082A3B1 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		4347E0522A9CDFEE0082A3B1 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		4347E0532A9CDFEE0082A3B1 /* AvatarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarViewController.xib; sourceTree = "<group>"; };
+		4347E0572A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
+		4347E0582A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCollectionViewCell.xib; sourceTree = "<group>"; };
 		43B3E6052A961E1000F8247A /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		43B3E6112A96290F00F8247A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		43B3E6132A96291B00F8247A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -299,7 +303,6 @@
 				18209EC82A7257110024F47B /* Splash */,
 				43B3E60C2A9628E000F8247A /* Onboarding */,
 				43D001FA2A98C24200E9729C /* CreateProfile */,
-				4347E0462A9C8ED70082A3B1 /* Avatar */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 		4347E0412A9C6C8B0082A3B1 /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
+				4347E0462A9C8ED70082A3B1 /* Avatar */,
 				4347E0382A9C658A0082A3B1 /* AgeSelection */,
 			);
 			path = Sheets;
@@ -391,8 +395,8 @@
 			isa = PBXGroup;
 			children = (
 				4347E0472A9C8EE70082A3B1 /* AvatarView.swift */,
-				4347E0492A9C8EF70082A3B1 /* AvatarViewController.swift */,
-				4347E04A2A9C8EF70082A3B1 /* AvatarViewController.xib */,
+				4347E0522A9CDFEE0082A3B1 /* AvatarViewController.swift */,
+				4347E0532A9CDFEE0082A3B1 /* AvatarViewController.xib */,
 				4347E04D2A9C8F520082A3B1 /* AvatarViewModel.swift */,
 			);
 			path = Avatar;
@@ -404,6 +408,15 @@
 				4347E0502A9CBAA90082A3B1 /* Gender.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		4347E0562A9CE2B80082A3B1 /* AvatarCell */ = {
+			isa = PBXGroup;
+			children = (
+				4347E0572A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift */,
+				4347E0582A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib */,
+			);
+			path = AvatarCell;
 			sourceTree = "<group>";
 		};
 		43B3E6042A961DF200F8247A /* Lottie Files */ = {
@@ -461,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				43B3E63A2A97A8A200F8247A /* OnboardingCell */,
+				4347E0562A9CE2B80082A3B1 /* AvatarCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -571,13 +585,14 @@
 				43B3E61C2A962BAC00F8247A /* SF-Pro-Text-Medium.otf in Resources */,
 				43B3E6262A962BF000F8247A /* SF-Pro-Display-Medium.otf in Resources */,
 				43B3E61B2A962BAC00F8247A /* SF-Pro-Text-Regular.otf in Resources */,
-				4347E04C2A9C8EF70082A3B1 /* AvatarViewController.xib in Resources */,
+				4347E0552A9CDFEE0082A3B1 /* AvatarViewController.xib in Resources */,
 				18209E882A71466A0024F47B /* Assets.xcassets in Resources */,
 				43B3E61E2A962BAC00F8247A /* SF-Pro-Text-Semibold.otf in Resources */,
 				18209E862A7146690024F47B /* Main.storyboard in Resources */,
 				43B3E6252A962BF000F8247A /* SF-Pro-Display-Semibold.otf in Resources */,
 				43B3E6402A97AA7100F8247A /* dna.json in Resources */,
 				43B3E6272A962BF000F8247A /* SF-Pro-Display-Bold.otf in Resources */,
+				4347E05A2A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib in Resources */,
 				43B3E63E2A97A8F100F8247A /* OnboardingCollectionViewCell.xib in Resources */,
 				43D002002A98C28300E9729C /* CreateProfileViewController.xib in Resources */,
 				43B3E6242A962BF000F8247A /* SF-Pro-Display-Regular.otf in Resources */,
@@ -627,7 +642,6 @@
 				43B3E6142A96291B00F8247A /* OnboardingViewModel.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
 				4347E0512A9CBAA90082A3B1 /* Gender.swift in Sources */,
-				4347E04B2A9C8EF70082A3B1 /* AvatarViewController.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
 				4347E0482A9C8EE70082A3B1 /* AvatarView.swift in Sources */,
 				43D001F52A98AF1300E9729C /* UserRepository.swift in Sources */,
@@ -638,6 +652,8 @@
 				43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */,
 				4347E0442A9C768B0082A3B1 /* AgeSelectionViewController.swift in Sources */,
 				43B3E6292A976CA300F8247A /* SplashView.swift in Sources */,
+				4347E0592A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift in Sources */,
+				4347E0542A9CDFEE0082A3B1 /* AvatarViewController.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,

@@ -58,6 +58,10 @@ internal enum L10n {
     internal static let onboarding4Description = L10n.tr("Localizable", "onboarding4Description", fallback: "Just quickly create a profile and you're ready to go")
     /// Here we go!
     internal static let onboarding4Title = L10n.tr("Localizable", "onboarding4Title", fallback: "Here we go!")
+    /// Select Avatar
+    internal static let selectAvatar = L10n.tr("Localizable", "selectAvatar", fallback: "Select Avatar")
+    /// Save Changes
+    internal static let selectChanges = L10n.tr("Localizable", "selectChanges", fallback: "Save Changes")
     /// Select Your Age
     internal static let selectYourAge = L10n.tr("Localizable", "selectYourAge", fallback: "Select Your Age")
   }

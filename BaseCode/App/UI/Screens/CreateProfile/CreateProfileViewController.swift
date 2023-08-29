@@ -44,6 +44,7 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     @IBAction
     func addAvatorButtonTapped(_ sender: Any) {
+        viewModel.handleAddAvatarTapped()
     }
     
     @IBAction

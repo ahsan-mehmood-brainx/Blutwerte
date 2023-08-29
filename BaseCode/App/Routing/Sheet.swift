@@ -10,7 +10,8 @@ import UIKit
 enum Sheet {
 
     case ageSelection(age: Int, ageDismissClosure: ((_ age: Int) -> Void))
-
+    case avatar
+    
     func controller() -> UIViewController {
         switch self {
         case let .ageSelection(age, ageDismissClosure):
@@ -18,6 +19,12 @@ enum Sheet {
             viewModel.selectedRow = age - 1
             viewModel.ageClosure = ageDismissClosure
             return AgeSelectionViewController(viewModel: viewModel)
+            
+        case .avatar:
+            let viewModel = AvatarViewModel()
+            let ViewController =  AvatarViewController(viewModel: viewModel)
+            ViewController.modalPresentationStyle = .fullScreen
+            return ViewController
         }
     }
 }

@@ -28,3 +28,5 @@
 "genderDescription" = "Based on your age and biological sex, we show you our reference values.";
 "add" = "Add";
 "selectYourAge" = "Select Your Age";
+"selectAvatar" = "Select Avatar";
+"selectChanges" = "Save Changes";
