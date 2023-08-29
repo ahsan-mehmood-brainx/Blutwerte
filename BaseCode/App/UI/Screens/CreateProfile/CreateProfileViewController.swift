@@ -34,17 +34,18 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
                 guard let self = self else {
                     return
                 }
-                self.profileView.nameTextField.text = self.viewModel.userName
-                self.profileView.countLabel.text = String(self.viewModel.maxNameCount - count)
-                self.profileView.countCircleProgressBarView.setProgressWithAnimation(
-                    value: Float(count) / Float(self.viewModel.maxNameCount)
+                self.profileView.setupNameField(
+                    withName: self.viewModel.userName,
+                    maxCount: self.viewModel.maxNameCount
                 )
             }
             .store(in: &bag)
         viewModel
             .$age
             .sink { [weak self] age in
-                self?.profileView.ageTextField.text = String(age)
+                if age > 0 {
+                    self?.profileView.ageTextField.text = String(age)
+                }
             }
             .store(in: &bag)
         viewModel

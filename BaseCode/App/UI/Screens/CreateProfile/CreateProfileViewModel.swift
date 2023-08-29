@@ -13,7 +13,7 @@ class CreateProfileViewModel: ViewModel {
     //MARK: - Properties
     
     @Published var age: Int = 0
-    @Published var gender: Gender = .male
+    @Published var gender: Gender? = nil
     @Published var avatar: Avatar?
     @Published var currentNameCount: Int = 0
     
@@ -40,5 +40,15 @@ class CreateProfileViewModel: ViewModel {
         router.showSheet(.avatar(avatar: avatar) { [weak self] avatar in
             self?.avatar = avatar
         })
+    }
+    
+    func validateUser() -> ValidationStatus {
+        guard let avatar = avatar else {
+            return .invalid(message: "Kindly Add")
+        }
+        guard currentNameCount ?? 0 > 0 else {
+            return .invalid(message: "ABC")
+        }
+        return .valid
     }
 }

@@ -40,7 +40,15 @@ class CreateProfileView: UIView {
     
     //MARK: - Public Methods
     
-    func setupGenderView(_ gender: Gender) {
+    func setupNameField(withName name: String, maxCount max: Int) {
+        nameTextField.text = name
+        countLabel.text = String(max - name.count)
+        countCircleProgressBarView.setProgressWithAnimation(
+            value: Float(name.count) / Float(max)
+        )
+    }
+    
+    func setupGenderView(_ gender: Gender?) {
         [maleView, femaleView].forEach {
             $0?.clearBorder()
         }
@@ -56,6 +64,8 @@ class CreateProfileView: UIView {
             femaleView.layer.borderWidth = 2
             femaleView.layer.borderColor = UIColor.astral.cgColor
             femaleLabel.textColor = .blackCustom
+        default:
+            return
         }
     }
     
