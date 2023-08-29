@@ -17,7 +17,7 @@ class CreateProfileView: UIView {
     @IBOutlet weak var nameTitle: UILabel!
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var countCircleView: UIView!
+    @IBOutlet weak var countCircleProgressBarView: CircularProgressBarView!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var ageTitle: UILabel!
     @IBOutlet weak var ageView: UIView!
@@ -90,9 +90,8 @@ class CreateProfileView: UIView {
         nameTextField.font = .sfProText(withWeight: .regular, andSize: 14)
         nameTextField.textColor = .paleSky
         
-        countCircleView.layer.cornerRadius = countCircleView.frame.size.width / 2
-        countCircleView.layer.borderColor = UIColor.astral.cgColor
-        countCircleView.layer.borderWidth = 2
+        countCircleProgressBarView.trackColor = .periwinKleGray
+        countCircleProgressBarView.trackColor = .astral
         
         countLabel.font = .sfProText(withWeight: .regular, andSize: 12)
         countLabel.textColor = .bayOfMany

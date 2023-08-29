@@ -18,6 +18,7 @@ extension UIColor {
     static let ghost = UIColor(hex: "#BDC2CD")
     static let paleSky = UIColor(hex: "#66727F")
     static let silverChalice = UIColor(hex: "#9D9D9D")
+    static let periwinKleGray = UIColor(hex: "#C2D7E6")
     
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var sanitizedHex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

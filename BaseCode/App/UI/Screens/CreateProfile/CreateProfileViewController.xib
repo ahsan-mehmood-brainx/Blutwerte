@@ -92,7 +92,7 @@
                                 <action selector="nameTextFieldChanged:" destination="-1" eventType="editingChanged" id="1HL-k4-F0S"/>
                             </connections>
                         </textField>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-2e-K5w">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-2e-K5w" customClass="CircularProgressBarView" customModule="BaseCode" customModuleProvider="target">
                             <rect key="frame" x="321" y="11" width="28" height="28"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1w-5b-d7o">
@@ -302,7 +302,7 @@
                 <outlet property="ageView" destination="BQP-z9-Jtj" id="E2u-u9-t0s"/>
                 <outlet property="avatorImageView" destination="UO5-FR-kMd" id="NRG-9t-kXQ"/>
                 <outlet property="avatorView" destination="kZF-Ka-rOc" id="AFg-XO-iaG"/>
-                <outlet property="countCircleView" destination="Ka4-2e-K5w" id="HId-OW-KZo"/>
+                <outlet property="countCircleProgressBarView" destination="Ka4-2e-K5w" id="t1W-mF-bfc"/>
                 <outlet property="countLabel" destination="j1w-5b-d7o" id="udE-NP-swF"/>
                 <outlet property="descriptionLabel" destination="c4U-nL-qaK" id="4BI-NY-pkL"/>
                 <outlet property="descriptionView" destination="NWc-ab-aDK" id="l4X-hi-GTS"/>

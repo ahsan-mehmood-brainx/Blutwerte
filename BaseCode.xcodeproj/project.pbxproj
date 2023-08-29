@@ -51,6 +51,7 @@
 		4347E0552A9CDFEE0082A3B1 /* AvatarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E0532A9CDFEE0082A3B1 /* AvatarViewController.xib */; };
 		4347E0592A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0572A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift */; };
 		4347E05A2A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E0582A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib */; };
+		4347E05D2A9DD1520082A3B1 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E05C2A9DD1520082A3B1 /* CircularProgressBarView.swift */; };
 		43B3E6062A961E1000F8247A /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6052A961E1000F8247A /* splash.json */; };
 		43B3E6092A961E8B00F8247A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 43B3E6082A961E8B00F8247A /* Lottie */; };
 		43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6112A96290F00F8247A /* OnboardingView.swift */; };
@@ -125,6 +126,7 @@
 		4347E0532A9CDFEE0082A3B1 /* AvatarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarViewController.xib; sourceTree = "<group>"; };
 		4347E0572A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
 		4347E0582A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCollectionViewCell.xib; sourceTree = "<group>"; };
+		4347E05C2A9DD1520082A3B1 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		43B3E6052A961E1000F8247A /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		43B3E6112A96290F00F8247A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		43B3E6132A96291B00F8247A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -419,6 +421,14 @@
 			path = AvatarCell;
 			sourceTree = "<group>";
 		};
+		4347E05B2A9DD1180082A3B1 /* CircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				4347E05C2A9DD1520082A3B1 /* CircularProgressBarView.swift */,
+			);
+			path = CircularProgress;
+			sourceTree = "<group>";
+		};
 		43B3E6042A961DF200F8247A /* Lottie Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,6 +485,7 @@
 			children = (
 				43B3E63A2A97A8A200F8247A /* OnboardingCell */,
 				4347E0562A9CE2B80082A3B1 /* AvatarCell */,
+				4347E05B2A9DD1180082A3B1 /* CircularProgress */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -653,6 +664,7 @@
 				4347E0442A9C768B0082A3B1 /* AgeSelectionViewController.swift in Sources */,
 				43B3E6292A976CA300F8247A /* SplashView.swift in Sources */,
 				4347E0592A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift in Sources */,
+				4347E05D2A9DD1520082A3B1 /* CircularProgressBarView.swift in Sources */,
 				4347E0542A9CDFEE0082A3B1 /* AvatarViewController.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */,

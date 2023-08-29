@@ -109,5 +109,8 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
             return
         }
         profileView.countLabel.text = String(viewModel.maxNameCount - viewModel.currentNameCount)
+        profileView.countCircleProgressBarView.setProgressWithAnimation(
+            duration: 0.5,
+            value: Float(viewModel.currentNameCount) / Float(viewModel.maxNameCount))
     }
 }
