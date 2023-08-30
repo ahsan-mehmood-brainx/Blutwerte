@@ -37,6 +37,7 @@ internal enum Asset {
   internal static let avatar9 = ImageAsset(name: "avatar9")
   internal static let add = ImageAsset(name: "add")
   internal static let backArrow = ImageAsset(name: "backArrow")
+  internal static let checkedSquare = ImageAsset(name: "checkedSquare")
   internal static let cross = ImageAsset(name: "cross")
   internal static let down = ImageAsset(name: "down")
   internal static let female = ImageAsset(name: "female")
@@ -46,6 +47,7 @@ internal enum Asset {
   internal static let profilePlaceholder = ImageAsset(name: "profilePlaceholder")
   internal static let sheild = ImageAsset(name: "sheild")
   internal static let textFile = ImageAsset(name: "textFile")
+  internal static let unChecked = ImageAsset(name: "unChecked")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

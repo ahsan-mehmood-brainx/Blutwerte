@@ -24,5 +24,7 @@ struct Images {
     static let avatar8 = "avatar8"
     static let avatar9 = "avatar9"
     static let avatar10 = "avatar10"
+    static let unChecked = "unChecked"
+    static let checkedSquare = "checkedSquare"
     
 }

@@ -53,6 +53,11 @@
 		4347E05A2A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E0582A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib */; };
 		4347E05D2A9DD1520082A3B1 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E05C2A9DD1520082A3B1 /* CircularProgressBarView.swift */; };
 		4347E05F2A9E0D760082A3B1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E05E2A9E0D760082A3B1 /* Validation.swift */; };
+		4347E0622A9E1DCE0082A3B1 /* PolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0612A9E1DCE0082A3B1 /* PolicyView.swift */; };
+		4347E0682A9E1DF00082A3B1 /* PolicyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0672A9E1DF00082A3B1 /* PolicyViewModel.swift */; };
+		4347E06B2A9E1F260082A3B1 /* SwiftRichString in Frameworks */ = {isa = PBXBuildFile; productRef = 4347E06A2A9E1F260082A3B1 /* SwiftRichString */; };
+		4347E06E2A9F05960082A3B1 /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E06C2A9F05960082A3B1 /* PolicyViewController.swift */; };
+		4347E06F2A9F05960082A3B1 /* PolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E06D2A9F05960082A3B1 /* PolicyViewController.xib */; };
 		43B3E6062A961E1000F8247A /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6052A961E1000F8247A /* splash.json */; };
 		43B3E6092A961E8B00F8247A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 43B3E6082A961E8B00F8247A /* Lottie */; };
 		43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6112A96290F00F8247A /* OnboardingView.swift */; };
@@ -129,6 +134,10 @@
 		4347E0582A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCollectionViewCell.xib; sourceTree = "<group>"; };
 		4347E05C2A9DD1520082A3B1 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		4347E05E2A9E0D760082A3B1 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		4347E0612A9E1DCE0082A3B1 /* PolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyView.swift; sourceTree = "<group>"; };
+		4347E0672A9E1DF00082A3B1 /* PolicyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewModel.swift; sourceTree = "<group>"; };
+		4347E06C2A9F05960082A3B1 /* PolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
+		4347E06D2A9F05960082A3B1 /* PolicyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolicyViewController.xib; sourceTree = "<group>"; };
 		43B3E6052A961E1000F8247A /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		43B3E6112A96290F00F8247A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		43B3E6132A96291B00F8247A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -163,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18209E952A7149630024F47B /* APIManager in Frameworks */,
+				4347E06B2A9E1F260082A3B1 /* SwiftRichString in Frameworks */,
 				18209E982A7149840024F47B /* SwiftDI in Frameworks */,
 				43B3E6092A961E8B00F8247A /* Lottie in Frameworks */,
 			);
@@ -391,6 +401,7 @@
 			children = (
 				4347E0462A9C8ED70082A3B1 /* Avatar */,
 				4347E0382A9C658A0082A3B1 /* AgeSelection */,
+				4347E0602A9E1DB20082A3B1 /* Policy */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -430,6 +441,17 @@
 				4347E05C2A9DD1520082A3B1 /* CircularProgressBarView.swift */,
 			);
 			path = CircularProgress;
+			sourceTree = "<group>";
+		};
+		4347E0602A9E1DB20082A3B1 /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				4347E0612A9E1DCE0082A3B1 /* PolicyView.swift */,
+				4347E06C2A9F05960082A3B1 /* PolicyViewController.swift */,
+				4347E06D2A9F05960082A3B1 /* PolicyViewController.xib */,
+				4347E0672A9E1DF00082A3B1 /* PolicyViewModel.swift */,
+			);
+			path = Policy;
 			sourceTree = "<group>";
 		};
 		43B3E6042A961DF200F8247A /* Lottie Files */ = {
@@ -542,6 +564,7 @@
 				18209E942A7149630024F47B /* APIManager */,
 				18209E972A7149840024F47B /* SwiftDI */,
 				43B3E6082A961E8B00F8247A /* Lottie */,
+				4347E06A2A9E1F260082A3B1 /* SwiftRichString */,
 			);
 			productName = BaseCode;
 			productReference = 18209E7B2A7146690024F47B /* BaseCode.app */;
@@ -575,6 +598,7 @@
 				18209E932A7149630024F47B /* XCRemoteSwiftPackageReference "swift-api-manager" */,
 				18209E962A7149840024F47B /* XCRemoteSwiftPackageReference "swift-dependency-injection" */,
 				43B3E6072A961E8B00F8247A /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				4347E0692A9E1F260082A3B1 /* XCRemoteSwiftPackageReference "SwiftRichString" */,
 			);
 			productRefGroup = 18209E7C2A7146690024F47B /* Products */;
 			projectDirPath = "";
@@ -606,6 +630,7 @@
 				43B3E6252A962BF000F8247A /* SF-Pro-Display-Semibold.otf in Resources */,
 				43B3E6402A97AA7100F8247A /* dna.json in Resources */,
 				43B3E6272A962BF000F8247A /* SF-Pro-Display-Bold.otf in Resources */,
+				4347E06F2A9F05960082A3B1 /* PolicyViewController.xib in Resources */,
 				4347E05A2A9CE2DB0082A3B1 /* AvatarCollectionViewCell.xib in Resources */,
 				43B3E63E2A97A8F100F8247A /* OnboardingCollectionViewCell.xib in Resources */,
 				43D002002A98C28300E9729C /* CreateProfileViewController.xib in Resources */,
@@ -649,6 +674,7 @@
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
+				4347E0682A9E1DF00082A3B1 /* PolicyViewModel.swift in Sources */,
 				4347E04E2A9C8F520082A3B1 /* AvatarViewModel.swift in Sources */,
 				43B3E62B2A976F0500F8247A /* UIColor.swift in Sources */,
 				18209EC12A724CC50024F47B /* Router.swift in Sources */,
@@ -664,7 +690,9 @@
 				18209E7F2A7146690024F47B /* AppDelegate.swift in Sources */,
 				43B3E6452A98A67100F8247A /* Onboarding.swift in Sources */,
 				43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */,
+				4347E06E2A9F05960082A3B1 /* PolicyViewController.swift in Sources */,
 				4347E0442A9C768B0082A3B1 /* AgeSelectionViewController.swift in Sources */,
+				4347E0622A9E1DCE0082A3B1 /* PolicyView.swift in Sources */,
 				43B3E6292A976CA300F8247A /* SplashView.swift in Sources */,
 				4347E0592A9CE2DB0082A3B1 /* AvatarCollectionViewCell.swift in Sources */,
 				4347E05D2A9DD1520082A3B1 /* CircularProgressBarView.swift in Sources */,
@@ -941,6 +969,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		4347E0692A9E1F260082A3B1 /* XCRemoteSwiftPackageReference "SwiftRichString" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftRichString";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		43B3E6072A961E8B00F8247A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios";
@@ -961,6 +997,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 18209E962A7149840024F47B /* XCRemoteSwiftPackageReference "swift-dependency-injection" */;
 			productName = SwiftDI;
+		};
+		4347E06A2A9E1F260082A3B1 /* SwiftRichString */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4347E0692A9E1F260082A3B1 /* XCRemoteSwiftPackageReference "SwiftRichString" */;
+			productName = SwiftRichString;
 		};
 		43B3E6082A961E8B00F8247A /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;

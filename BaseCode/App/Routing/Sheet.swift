@@ -11,6 +11,7 @@ enum Sheet {
 
     case ageSelection(age: Int, selectedAge: ((_ age: Int) -> Void))
     case avatar(avatar: Avatar?, selectedAvatar: ((Avatar?) -> Void))
+    case policy
     
     func controller() -> UIViewController {
         switch self {
@@ -27,6 +28,13 @@ enum Sheet {
             let ViewController =  AvatarViewController(viewModel: viewModel)
             ViewController.modalPresentationStyle = .fullScreen
             return ViewController
+            
+        case .policy:
+            let viewModel = PolicyViewModel()
+            let viewController = PolicyViewController(viewModel: viewModel)
+            viewController.modalPresentationStyle = .overCurrentContext
+            viewController.modalTransitionStyle = .crossDissolve
+            return viewController
         }
     }
 }

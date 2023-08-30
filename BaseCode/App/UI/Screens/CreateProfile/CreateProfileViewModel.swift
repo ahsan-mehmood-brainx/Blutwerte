@@ -43,12 +43,16 @@ class CreateProfileViewModel: ViewModel {
     }
     
     func validateUser() -> ValidationStatus {
-        guard let avatar = avatar else {
-            return .invalid(message: "Kindly Add")
-        }
-        guard currentNameCount ?? 0 > 0 else {
-            return .invalid(message: "ABC")
-        }
+//        guard let avatar = avatar else {
+//            return .invalid(message: "Kindly Add")
+//        }
+//        guard currentNameCount ?? 0 > 0 else {
+//            return .invalid(message: "ABC")
+//        }
         return .valid
+    }
+    
+    func showPolicyScreen() {
+        router.showSheet(.policy)
     }
 }

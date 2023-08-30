@@ -74,6 +74,12 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     @IBAction
     func actionButtonTapped(_ sender: Any) {
+        switch viewModel.validateUser() {
+        case let .invalid(message):
+            print("D:",message)
+        case .valid:
+            viewModel.showPolicyScreen()
+        }
     }
     
     @objc
