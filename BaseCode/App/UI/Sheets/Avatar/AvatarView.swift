@@ -33,7 +33,7 @@ class AvatarView: UIView {
         
         collectionView.backgroundColor = .whiteLilac
         
-        actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 14)
+        actionButton.titleLabel?.font = .sfProText(withWeight: .regular, andSize: 16)
         actionButton.setTitleColor(.whiteCustom, for: .normal)
         actionButton.setTitle(L10n.Localizable.selectChanges, for: .normal)
         actionButton.layer.cornerRadius = 10

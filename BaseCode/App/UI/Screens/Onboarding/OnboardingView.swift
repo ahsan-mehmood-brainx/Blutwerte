@@ -37,7 +37,6 @@ class OnboardingView: UIView {
         
         actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 16)
         actionButton.setTitleColor(.whiteCustom, for: .normal)
-        actionButton.setTitle(L10n.Localizable.add, for: .normal)
         actionButton.layer.cornerRadius = 10
         actionButton.backgroundColor = .astral
         actionButton.addShadow(

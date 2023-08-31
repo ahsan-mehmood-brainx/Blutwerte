@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="values" transform="translate(-16 -754)">
+    <g id="Rectangle_5591" data-name="Rectangle 5591" transform="translate(16 754)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="40" height="40" stroke="none"/>
+      <rect x="0.5" y="0.5" width="39" height="39" fill="none"/>
+    </g>
+    <path id="noun-science-4199654_1_" data-name="noun-science-4199654 (1)" d="M223.018,41.984a2,2,0,0,0,0,4.006h.12V62.182a4.6,4.6,0,1,0,9.2,0V45.99h.118a2,2,0,1,0,0-4.006Zm0,1.46h9.434a.544.544,0,1,1,0,1.087h-9.434a.544.544,0,0,1,0-1.087ZM224.6,45.99h6.278V62.182a3.139,3.139,0,1,1-6.279,0v-.388h.986a.73.73,0,0,0,0-1.459H224.6V59.167h2.445a.73.73,0,1,0,0-1.459H224.6V56.544h.986a.73.73,0,1,0,0-1.459H224.6V53.923h2.445a.73.73,0,1,0,0-1.46H224.6V51.3h.986a.73.73,0,1,0,0-1.459H224.6v-1.17h2.445a.73.73,0,1,0,0-1.459H224.6Z" transform="translate(-192.015 720.016)" fill="#bfbfbf"/>
+  </g>
+</svg>

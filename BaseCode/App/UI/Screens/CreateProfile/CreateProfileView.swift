@@ -140,7 +140,7 @@ class CreateProfileView: UIView {
         descriptionLabel.text = L10n.Localizable.genderDescription
         
         actionButton.setTitle(L10n.Localizable.add, for: .normal)
-        actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 16)
+        actionButton.titleLabel?.font = .sfProText(withWeight: .regular, andSize: 16)
         actionButton.setTitleColor(.whiteCustom, for: .normal)
         actionButton.layer.cornerRadius = 10
         actionButton.backgroundColor = .astral

@@ -16,6 +16,7 @@ class PolicyViewModel: ViewModel {
     }
     
     func handleContinueTapped() {
-        
+        router.dismiss()
+        router.showSheet(.tabbar)
     }
 }

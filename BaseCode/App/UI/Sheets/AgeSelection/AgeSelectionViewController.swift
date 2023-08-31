@@ -40,7 +40,6 @@ class AgeSelectionViewController: ViewController<AgeSelectionViewModel> {
         presentationController?.detents = [.custom(resolver: { _ in
             300
         })]
-        presentationController?.prefersGrabberVisible = true
     }
 }
 

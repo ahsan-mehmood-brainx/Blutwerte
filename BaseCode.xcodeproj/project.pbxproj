@@ -40,6 +40,7 @@
 		18209EE22A7260B70024F47B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE12A7260B70024F47B /* UIView.swift */; };
 		18209EE42A7260D30024F47B /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE32A7260D30024F47B /* XibView.swift */; };
 		18209EE72A7261C30024F47B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE62A7261C30024F47B /* Storage.swift */; };
+		432861502A9F3DEC00361D50 /* CustomTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328614F2A9F3DEC00361D50 /* CustomTabbarViewModel.swift */; };
 		4347E03A2A9C65F50082A3B1 /* AgeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */; };
 		4347E0402A9C66130082A3B1 /* AgeSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */; };
 		4347E0442A9C768B0082A3B1 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */; };
@@ -58,6 +59,9 @@
 		4347E06B2A9E1F260082A3B1 /* SwiftRichString in Frameworks */ = {isa = PBXBuildFile; productRef = 4347E06A2A9E1F260082A3B1 /* SwiftRichString */; };
 		4347E06E2A9F05960082A3B1 /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E06C2A9F05960082A3B1 /* PolicyViewController.swift */; };
 		4347E06F2A9F05960082A3B1 /* PolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E06D2A9F05960082A3B1 /* PolicyViewController.xib */; };
+		4347E0722A9F2D2B0082A3B1 /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0712A9F2D2B0082A3B1 /* CustomTabbarView.swift */; };
+		4347E0752A9F2D3A0082A3B1 /* CustomTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0732A9F2D3A0082A3B1 /* CustomTabbarViewController.swift */; };
+		4347E0762A9F2D3A0082A3B1 /* CustomTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4347E0742A9F2D3A0082A3B1 /* CustomTabbarViewController.xib */; };
 		43B3E6062A961E1000F8247A /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6052A961E1000F8247A /* splash.json */; };
 		43B3E6092A961E8B00F8247A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 43B3E6082A961E8B00F8247A /* Lottie */; };
 		43B3E6122A96290F00F8247A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6112A96290F00F8247A /* OnboardingView.swift */; };
@@ -121,6 +125,7 @@
 		18209EE12A7260B70024F47B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		18209EE32A7260D30024F47B /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4328614F2A9F3DEC00361D50 /* CustomTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarViewModel.swift; sourceTree = "<group>"; };
 		4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionView.swift; sourceTree = "<group>"; };
 		4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewModel.swift; sourceTree = "<group>"; };
 		4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +143,9 @@
 		4347E0672A9E1DF00082A3B1 /* PolicyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewModel.swift; sourceTree = "<group>"; };
 		4347E06C2A9F05960082A3B1 /* PolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
 		4347E06D2A9F05960082A3B1 /* PolicyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolicyViewController.xib; sourceTree = "<group>"; };
+		4347E0712A9F2D2B0082A3B1 /* CustomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
+		4347E0732A9F2D3A0082A3B1 /* CustomTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarViewController.swift; sourceTree = "<group>"; };
+		4347E0742A9F2D3A0082A3B1 /* CustomTabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabbarViewController.xib; sourceTree = "<group>"; };
 		43B3E6052A961E1000F8247A /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		43B3E6112A96290F00F8247A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		43B3E6132A96291B00F8247A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -317,6 +325,7 @@
 				18209EC82A7257110024F47B /* Splash */,
 				43B3E60C2A9628E000F8247A /* Onboarding */,
 				43D001FA2A98C24200E9729C /* CreateProfile */,
+				4347E0702A9F2CA00082A3B1 /* CustomTabbar */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -452,6 +461,17 @@
 				4347E0672A9E1DF00082A3B1 /* PolicyViewModel.swift */,
 			);
 			path = Policy;
+			sourceTree = "<group>";
+		};
+		4347E0702A9F2CA00082A3B1 /* CustomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4347E0712A9F2D2B0082A3B1 /* CustomTabbarView.swift */,
+				4347E0732A9F2D3A0082A3B1 /* CustomTabbarViewController.swift */,
+				4347E0742A9F2D3A0082A3B1 /* CustomTabbarViewController.xib */,
+				4328614F2A9F3DEC00361D50 /* CustomTabbarViewModel.swift */,
+			);
+			path = CustomTabbar;
 			sourceTree = "<group>";
 		};
 		43B3E6042A961DF200F8247A /* Lottie Files */ = {
@@ -618,6 +638,7 @@
 				18209EBF2A72493F0024F47B /* InfoPlist.strings in Resources */,
 				43B3E61D2A962BAC00F8247A /* SF-Pro-Text-Bold.otf in Resources */,
 				18209E8B2A71466A0024F47B /* LaunchScreen.storyboard in Resources */,
+				4347E0762A9F2D3A0082A3B1 /* CustomTabbarViewController.xib in Resources */,
 				43B3E6062A961E1000F8247A /* splash.json in Resources */,
 				18209ECC2A7257940024F47B /* SplashViewController.xib in Resources */,
 				43B3E61C2A962BAC00F8247A /* SF-Pro-Text-Medium.otf in Resources */,
@@ -673,6 +694,7 @@
 				43B3E6382A97A37900F8247A /* OnboardingViewController.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
+				432861502A9F3DEC00361D50 /* CustomTabbarViewModel.swift in Sources */,
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
 				4347E0682A9E1DF00082A3B1 /* PolicyViewModel.swift in Sources */,
 				4347E04E2A9C8F520082A3B1 /* AvatarViewModel.swift in Sources */,
@@ -698,6 +720,7 @@
 				4347E05D2A9DD1520082A3B1 /* CircularProgressBarView.swift in Sources */,
 				4347E0542A9CDFEE0082A3B1 /* AvatarViewController.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
+				4347E0752A9F2D3A0082A3B1 /* CustomTabbarViewController.swift in Sources */,
 				43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
 				43B3E6422A97B29B00F8247A /* Images.swift in Sources */,
@@ -710,6 +733,7 @@
 				4347E0402A9C66130082A3B1 /* AgeSelectionViewModel.swift in Sources */,
 				18209ECE2A7257B90024F47B /* SplashViewModel.swift in Sources */,
 				43D001FF2A98C28300E9729C /* CreateProfileViewController.swift in Sources */,
+				4347E0722A9F2D2B0082A3B1 /* CustomTabbarView.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
 				4347E03A2A9C65F50082A3B1 /* AgeSelectionView.swift in Sources */,
 				18209E812A7146690024F47B /* SceneDelegate.swift in Sources */,

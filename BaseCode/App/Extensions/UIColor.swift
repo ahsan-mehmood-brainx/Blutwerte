@@ -21,6 +21,7 @@ extension UIColor {
     static let periwinKleGray = UIColor(hex: "#C2D7E6")
     static let emperor = UIColor(hex: "#555151")
     static let mineShaft = UIColor(hex: "#3A3A3A")
+    static let silver = UIColor(hex: "#BFBFBF")
     
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var sanitizedHex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
