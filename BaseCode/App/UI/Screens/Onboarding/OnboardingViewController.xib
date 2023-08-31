@@ -47,7 +47,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Em-nR-bqE" customClass="UIPageControl">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Em-nR-bqE" customClass="CustomPageControl" customModule="BaseCode" customModuleProvider="target">
                     <rect key="frame" x="164.66666666666666" y="656" width="64" height="8"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -113,7 +113,7 @@
                 <outlet property="actionButton" destination="BRd-gb-DKN" id="Shv-xS-R51"/>
                 <outlet property="collectionView" destination="7oP-Df-PRk" id="GtP-6I-0Ao"/>
                 <outlet property="descriptionLabel" destination="qyP-lJ-hfn" id="jI9-M3-Nvy"/>
-                <outlet property="pageController" destination="5Em-nR-bqE" id="rwE-FZ-JAz"/>
+                <outlet property="pageController" destination="5Em-nR-bqE" id="N8c-wC-771"/>
                 <outlet property="titleLabel" destination="vLj-QG-CvX" id="Qqv-dD-cUz"/>
                 <outlet property="transitionView" destination="K50-0g-hOP" id="RuC-0q-IOn"/>
             </connections>

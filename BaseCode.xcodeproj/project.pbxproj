@@ -40,6 +40,7 @@
 		18209EE22A7260B70024F47B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE12A7260B70024F47B /* UIView.swift */; };
 		18209EE42A7260D30024F47B /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE32A7260D30024F47B /* XibView.swift */; };
 		18209EE72A7261C30024F47B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE62A7261C30024F47B /* Storage.swift */; };
+		432861532AA0AD8F00361D50 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432861522AA0AD8F00361D50 /* CustomPageControl.swift */; };
 		4347E03A2A9C65F50082A3B1 /* AgeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */; };
 		4347E0402A9C66130082A3B1 /* AgeSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */; };
 		4347E0442A9C768B0082A3B1 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */; };
@@ -121,6 +122,7 @@
 		18209EE12A7260B70024F47B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		18209EE32A7260D30024F47B /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		432861522AA0AD8F00361D50 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
 		4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionView.swift; sourceTree = "<group>"; };
 		4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewModel.swift; sourceTree = "<group>"; };
 		4347E0422A9C768B0082A3B1 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
@@ -385,6 +387,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		432861512AA0AD7900361D50 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				432861522AA0AD8F00361D50 /* CustomPageControl.swift */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		4347E0382A9C658A0082A3B1 /* AgeSelection */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +521,7 @@
 				43B3E63A2A97A8A200F8247A /* OnboardingCell */,
 				4347E0562A9CE2B80082A3B1 /* AvatarCell */,
 				4347E05B2A9DD1180082A3B1 /* CircularProgress */,
+				432861512AA0AD7900361D50 /* PageControl */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -700,6 +711,7 @@
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
+				432861532AA0AD8F00361D50 /* CustomPageControl.swift in Sources */,
 				43B3E6422A97B29B00F8247A /* Images.swift in Sources */,
 				43D002022A98C2AA00E9729C /* CreateProfileViewModel.swift in Sources */,
 				4347E05F2A9E0D760082A3B1 /* Validation.swift in Sources */,

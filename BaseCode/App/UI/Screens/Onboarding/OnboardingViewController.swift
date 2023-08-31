@@ -35,6 +35,7 @@ class OnboardingViewController: ViewController<OnboardingViewModel> {
         onboardingView.collectionView.dataSource = self
         onboardingView.collectionView.delegate = self
         onboardingView.transitionView.alpha = 0
+        onboardingView.pageController.numberOfPages = viewModel.onboardingCells.count
     }
     
     private func setupCollectionViewLayout() {
@@ -57,6 +58,7 @@ extension OnboardingViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: OnboardingCollectionViewCell = collectionView.dequeueCell(for: indexPath)
         let onboarding: Onboarding = viewModel.onboardingCells[indexPath.item]
+        onboardingView.pageController.currentPage = indexPath.item
         if onboarding.showAnimation {
             cell.imageView.isHidden = true
             cell.animationView.isHidden = false

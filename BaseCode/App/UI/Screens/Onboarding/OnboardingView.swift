@@ -14,7 +14,7 @@ class OnboardingView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var pageController: UIPageControl!
+    @IBOutlet weak var pageController: CustomPageControl!
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var transitionView: UIView!
     
@@ -35,6 +35,8 @@ class OnboardingView: UIView {
         
         descriptionLabel.font = .sfProText(withWeight: .regular, andSize: 16)
         descriptionLabel.textColor = .hoki
+        
+        pageController.backgroundColor = .whiteLilac
         
         actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 16)
         actionButton.setTitleColor(.whiteCustom, for: .normal)
