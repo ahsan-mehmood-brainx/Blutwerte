@@ -34,6 +34,7 @@ class OnboardingViewController: ViewController<OnboardingViewModel> {
         onboardingView.collectionView.registerNib(for: OnboardingCollectionViewCell.self)
         onboardingView.collectionView.dataSource = self
         onboardingView.collectionView.delegate = self
+        onboardingView.transitionView.alpha = 0
     }
     
     private func setupCollectionViewLayout() {

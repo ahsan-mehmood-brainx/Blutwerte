@@ -16,6 +16,7 @@ class OnboardingView: UIView {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var pageController: UIPageControl!
     @IBOutlet weak var actionButton: UIButton!
+    @IBOutlet weak var transitionView: UIView!
     
     //MARK: - Lifecycle Methods
     
@@ -47,5 +48,7 @@ class OnboardingView: UIView {
             alpha: 0.84,
             radius: 12
         )
+        
+        transitionView.backgroundColor = .astral
     }
 }
