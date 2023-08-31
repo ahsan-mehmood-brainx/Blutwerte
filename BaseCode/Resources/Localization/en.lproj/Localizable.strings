@@ -43,3 +43,7 @@
 "values" = "Values";
 "charts" = "Charts";
 "more" = "More";
+"kindlyAddImage" = "Kindly Add Image";
+"kindlyAddName" = "Kindly Add Name";
+"kindlyAddAge" = "Kindly Add Age";
+"kindlySelectGender" = "kindly Select Gender";

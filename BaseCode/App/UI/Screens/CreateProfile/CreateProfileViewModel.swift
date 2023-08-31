@@ -43,12 +43,18 @@ class CreateProfileViewModel: ViewModel {
     }
     
     func validateUser() -> ValidationStatus {
-//        guard let avatar = avatar else {
-//            return .invalid(message: "Kindly Add")
-//        }
-//        guard currentNameCount ?? 0 > 0 else {
-//            return .invalid(message: "ABC")
-//        }
+        guard let avatar = avatar else {
+            return .invalid(message: L10n.Localizable.kindlyAddImage)
+        }
+        guard userName.count > 0 else {
+            return .invalid(message: L10n.Localizable.kindlyAddName)
+        }
+        guard age > 0 else {
+            return .invalid(message: L10n.Localizable.kindlyAddAge)
+        }
+        guard let gender = gender else {
+            return .invalid(message: L10n.Localizable.kindlySelectGender)
+        }
         return .valid
     }
     

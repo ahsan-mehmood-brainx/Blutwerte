@@ -41,6 +41,14 @@ internal enum L10n {
     internal static let home = L10n.tr("Localizable", "home", fallback: "Home")
     /// I accept the
     internal static let iAcceptThe = L10n.tr("Localizable", "iAcceptThe", fallback: "I accept the")
+    /// Kindly Add Age
+    internal static let kindlyAddAge = L10n.tr("Localizable", "kindlyAddAge", fallback: "Kindly Add Age")
+    /// Kindly Add Image
+    internal static let kindlyAddImage = L10n.tr("Localizable", "kindlyAddImage", fallback: "Kindly Add Image")
+    /// Kindly Add Name
+    internal static let kindlyAddName = L10n.tr("Localizable", "kindlyAddName", fallback: "Kindly Add Name")
+    /// kindly Select Gender
+    internal static let kindlySelectGender = L10n.tr("Localizable", "kindlySelectGender", fallback: "kindly Select Gender")
     /// Male
     internal static let male = L10n.tr("Localizable", "male", fallback: "Male")
     /// More
