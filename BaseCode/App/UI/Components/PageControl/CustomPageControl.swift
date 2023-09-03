@@ -7,10 +7,15 @@
 
 import UIKit
 
+protocol CustomPageControlDelegate {
+    func pageControl(_ pageControl: CustomPageControl, didUpdateTo activePage: Int)
+}
+
 class CustomPageControl: UIPageControl {
     
     //MARK: - Properties
     
+    var delegate: CustomPageControlDelegate?
     private var activeColor: UIColor = .astral
     private var inactiveColor: UIColor = .periwinKleGray
     
@@ -24,6 +29,7 @@ class CustomPageControl: UIPageControl {
     override var currentPage: Int {
         didSet {
             updateDots()
+            delegate?.pageControl(self, didUpdateTo: currentPage)
         }
     }
     
