@@ -34,7 +34,7 @@ class OnboardingViewController: ViewController<OnboardingViewModel> {
     //MARK: - Action Methods
     
     @IBAction func actionButtonTapped(_ sender: Any) {
-        viewModel.router.append(.createProfile)
+        viewModel.moveToCreateProfile()
     }
     
     @objc
@@ -46,6 +46,17 @@ class OnboardingViewController: ViewController<OnboardingViewModel> {
         onboardingView.pageController.currentPage = currentPage + 1
     }
     
+    @objc
+    func showTransition() {
+        UIView.animate(withDuration: 0.6, delay: 0.1, options: .curveEaseInOut ,animations: {
+            self.onboardingView.tranitionView.frame = self.onboardingView.frame
+            self.onboardingView.tranitionView.alpha = 1
+        })
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.viewModel.moveToCreateProfile()
+        }
+    }
+    
     //MARK: - Private Methods
     
     private func initialSetup() {
@@ -54,6 +65,7 @@ class OnboardingViewController: ViewController<OnboardingViewModel> {
         onboardingView.collectionView.delegate = self
         onboardingView.pageController.delegate = self
         onboardingView.pageController.numberOfPages = viewModel.onboardingCells.count
+        onboardingView.tranitionView.alpha = 0
     }
     
     private func setupCollectionViewLayout() {
@@ -92,6 +104,9 @@ extension OnboardingViewController: UICollectionViewDataSource {
             cell.animationView.isHidden = false
             cell.animationView.loopMode = .loop
             cell.animationView.play()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.2) {
+                self.showTransition()
+            }
         } else {
             cell.animationView.isHidden = true
             cell.imageView.isHidden = false

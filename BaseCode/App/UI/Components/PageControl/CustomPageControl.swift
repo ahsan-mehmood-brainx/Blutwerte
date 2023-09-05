@@ -53,7 +53,7 @@ class CustomPageControl: UIPageControl {
         updateDots()
     }
     
-    //MARK: Private Methods
+    //MARK: - Private Methods
     
     private func addTargets() {
         addTarget(self, action: #selector(pageControlValueChanged), for: .valueChanged)
