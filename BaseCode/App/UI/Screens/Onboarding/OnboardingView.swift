@@ -12,10 +12,9 @@ class OnboardingView: UIView {
     //MARK: - Outlets
     
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var pageController: UIPageControl!
+    @IBOutlet weak var pageController: CustomPageControl!
     @IBOutlet weak var actionButton: UIButton!
+    @IBOutlet weak var tranitionView: UIView!
     
     //MARK: - Lifecycle Methods
     
@@ -29,11 +28,7 @@ class OnboardingView: UIView {
     private func initialSetup() {
         backgroundColor = .whiteLilac
         
-        titleLabel.font = .sfProText(withWeight: .bold, andSize: 24)
-        titleLabel.textColor = .astral
-        
-        descriptionLabel.font = .sfProText(withWeight: .regular, andSize: 16)
-        descriptionLabel.textColor = .hoki
+        pageController.backgroundColor = .whiteLilac
         
         actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 16)
         actionButton.setTitleColor(.whiteCustom, for: .normal)
@@ -46,5 +41,7 @@ class OnboardingView: UIView {
             alpha: 0.84,
             radius: 12
         )
+        
+        tranitionView.backgroundColor = .astral
     }
 }

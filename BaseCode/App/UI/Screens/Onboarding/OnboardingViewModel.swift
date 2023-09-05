@@ -39,4 +39,10 @@ class OnboardingViewModel: ViewModel {
             descpription: L10n.Localizable.onboarding4Description
         )
     ]
+    
+    //MARK: - Methods
+    
+    func moveToCreateProfile() {
+        router.append(.createProfile)
+    }
 }

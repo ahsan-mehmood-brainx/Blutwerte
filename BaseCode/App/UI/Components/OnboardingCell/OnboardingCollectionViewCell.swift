@@ -13,8 +13,10 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     //MARK: - Outlets
     
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var animationView: LottieAnimationView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     //MARK: - Lifecycle Methods
     
@@ -30,5 +32,11 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
             $0?.backgroundColor = .whiteLilac
         }
         imageView.contentMode = .scaleAspectFit
+        
+        titleLabel.font = .sfProText(withWeight: .bold, andSize: 24)
+        titleLabel.textColor = .astral
+        
+        descriptionLabel.font = .sfProText(withWeight: .regular, andSize: 16)
+        descriptionLabel.textColor = .hoki
     }
 }
