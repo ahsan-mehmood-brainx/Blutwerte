@@ -76,7 +76,7 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     func actionButtonTapped(_ sender: Any) {
         switch viewModel.validateUser() {
         case let .invalid(message):
-            print("D:",message)
+            showAlert(with: message)
         case .valid:
             viewModel.showPolicyScreen()
         }
@@ -107,16 +107,22 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     private func addTargets() {
         profileView.ageView.addGestureRecognizer(
-            UITapGestureRecognizer(target: self,
-                                   action: #selector(ageViewTapped))
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(ageViewTapped)
+            )
         )
         profileView.maleView.addGestureRecognizer(
-            UITapGestureRecognizer(target: self,
-                                   action: #selector(genderViewTapped))
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(genderViewTapped)
+            )
         )
         profileView.femaleView.addGestureRecognizer(
-            UITapGestureRecognizer(target: self,
-                                   action: #selector(genderViewTapped))
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(genderViewTapped)
+            )
         )
     }
 }

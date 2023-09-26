@@ -43,12 +43,7 @@ class CreateProfileViewModel: ViewModel {
     }
     
     func validateUser() -> ValidationStatus {
-//        guard let avatar = avatar else {
-//            return .invalid(message: "Kindly Add")
-//        }
-//        guard currentNameCount ?? 0 > 0 else {
-//            return .invalid(message: "ABC")
-//        }
+        //TODO: - Add Validations In Next Branch
         return .valid
     }
     
