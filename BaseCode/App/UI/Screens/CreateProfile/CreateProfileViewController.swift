@@ -69,7 +69,7 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     @IBAction
     func nameTextFieldChanged(_ textField: UITextField) {
-        viewModel.userName = textField.text ?? AppConstants.empty
+        viewModel.userName = textField.text ?? .empty
     }
     
     @IBAction
@@ -102,7 +102,7 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     
     private func initialSetup() {
         profileView.setupGenderView(viewModel.gender)
-        viewModel.userName = AppConstants.empty
+        viewModel.userName = .empty
     }
     
     private func addTargets() {

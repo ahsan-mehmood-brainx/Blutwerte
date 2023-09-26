@@ -18,7 +18,7 @@ class CreateProfileViewModel: ViewModel {
     @Published var currentNameCount: Int = 0
     
     let maxNameCount: Int = 15
-    var userName: String = AppConstants.empty {
+    var userName: String = .empty {
         didSet {
             currentNameCount = userName.count
             if currentNameCount > maxNameCount {
