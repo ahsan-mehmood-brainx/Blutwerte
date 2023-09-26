@@ -15,19 +15,19 @@ class OnboardingViewModel: ViewModel {
     @Injected var repository: UserRepository
     let onboardingCells: [Onboarding] = [
         Onboarding(
-            imageName: Images.heartCare,
+            imageName: Asset.heartCare.name,
             showAnimation: false,
             title: L10n.Localizable.onboarding1Title,
             descpription: L10n.Localizable.onboarding1Description
         ),
         Onboarding(
-            imageName: Images.sheild,
+            imageName: Asset.sheild.name,
             showAnimation: false,
             title: L10n.Localizable.onboarding2Title,
             descpription: L10n.Localizable.onboarding2Description
         ),
         Onboarding(
-            imageName: Images.textFile,
+            imageName: Asset.textFile.name,
             showAnimation: false,
             title: L10n.Localizable.onboarding3Title,
             descpription: L10n.Localizable.onboarding3Description

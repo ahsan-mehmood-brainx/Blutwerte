@@ -25,7 +25,7 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
         viewModel
             .$avatar
             .sink { [weak self] avatar in
-                self?.profileView.avatorImageView.image = avatar?.image ?? UIImage(named: Images.profilePlaceholder)
+                self?.profileView.avatorImageView.image = avatar?.image ?? Asset.profilePlaceholder.image
             }
             .store(in: &bag)
         viewModel

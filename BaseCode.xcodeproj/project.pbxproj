@@ -78,7 +78,6 @@
 		43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E63B2A97A8F100F8247A /* OnboardingCollectionViewCell.swift */; };
 		43B3E63E2A97A8F100F8247A /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E63C2A97A8F100F8247A /* OnboardingCollectionViewCell.xib */; };
 		43B3E6402A97AA7100F8247A /* dna.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E63F2A97AA7100F8247A /* dna.json */; };
-		43B3E6422A97B29B00F8247A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6412A97B29B00F8247A /* Images.swift */; };
 		43B3E6452A98A67100F8247A /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6442A98A67000F8247A /* Onboarding.swift */; };
 		43D001F52A98AF1300E9729C /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D001F42A98AF1300E9729C /* UserRepository.swift */; };
 		43D001F92A98B6AC00E9729C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D001F82A98B6AC00E9729C /* AppConstants.swift */; };
@@ -158,7 +157,6 @@
 		43B3E63B2A97A8F100F8247A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		43B3E63C2A97A8F100F8247A /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		43B3E63F2A97AA7100F8247A /* dna.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dna.json; sourceTree = "<group>"; };
-		43B3E6412A97B29B00F8247A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		43B3E6442A98A67000F8247A /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		43D001F42A98AF1300E9729C /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		43D001F82A98B6AC00E9729C /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -286,7 +284,6 @@
 			children = (
 				18209ED02A725B6F0024F47B /* Environment.swift */,
 				18209ED52A725CD40024F47B /* Config.swift */,
-				43B3E6412A97B29B00F8247A /* Images.swift */,
 				43D001F82A98B6AC00E9729C /* AppConstants.swift */,
 			);
 			path = Globals;
@@ -712,7 +709,6 @@
 				43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
 				432861532AA0AD8F00361D50 /* CustomPageControl.swift in Sources */,
-				43B3E6422A97B29B00F8247A /* Images.swift in Sources */,
 				43D002022A98C2AA00E9729C /* CreateProfileViewModel.swift in Sources */,
 				4347E05F2A9E0D760082A3B1 /* Validation.swift in Sources */,
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,
