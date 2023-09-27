@@ -40,6 +40,7 @@
 		18209EE22A7260B70024F47B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE12A7260B70024F47B /* UIView.swift */; };
 		18209EE42A7260D30024F47B /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE32A7260D30024F47B /* XibView.swift */; };
 		18209EE72A7261C30024F47B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE62A7261C30024F47B /* Storage.swift */; };
+		4318021B2AC424A700681F0B /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4318021A2AC424A700681F0B /* UITextField.swift */; };
 		432861532AA0AD8F00361D50 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432861522AA0AD8F00361D50 /* CustomPageControl.swift */; };
 		4347E03A2A9C65F50082A3B1 /* AgeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */; };
 		4347E0402A9C66130082A3B1 /* AgeSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */; };
@@ -120,6 +121,7 @@
 		18209EE12A7260B70024F47B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		18209EE32A7260D30024F47B /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4318021A2AC424A700681F0B /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		432861522AA0AD8F00361D50 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
 		4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionView.swift; sourceTree = "<group>"; };
 		4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewModel.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				18209ED72A725FD90024F47B /* UITableViewCell.swift */,
 				18209EA72A714AB30024F47B /* UIViewController.swift */,
 				18209EE12A7260B70024F47B /* UIView.swift */,
+				4318021A2AC424A700681F0B /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -674,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
+				4318021B2AC424A700681F0B /* UITextField.swift in Sources */,
 				43D001F92A98B6AC00E9729C /* AppConstants.swift in Sources */,
 				43B3E6382A97A37900F8247A /* OnboardingViewController.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,

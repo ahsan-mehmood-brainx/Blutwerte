@@ -88,9 +88,6 @@
                             <rect key="frame" x="21" y="15.666666666666631" width="279" height="18.666666666666679"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <action selector="nameTextFieldChanged:" destination="-1" eventType="editingChanged" id="1HL-k4-F0S"/>
-                            </connections>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-2e-K5w" customClass="CircularProgressBarView" customModule="BaseCode" customModuleProvider="target">
                             <rect key="frame" x="321" y="11" width="28" height="28"/>

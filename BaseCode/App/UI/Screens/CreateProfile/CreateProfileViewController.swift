@@ -24,8 +24,9 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     override func setupBinding() {
         viewModel
             .$avatar
+            .compactMap { $0 }
             .sink { [weak self] avatar in
-                self?.profileView.avatorImageView.image = avatar?.image ?? Asset.profilePlaceholder.image
+                self?.profileView.avatorImageView.image = avatar.image
             }
             .store(in: &bag)
         viewModel
@@ -34,11 +35,17 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
                 guard let self = self else {
                     return
                 }
-                self.profileView.setupNameField(
-                    withName: self.viewModel.userName,
-                    maxCount: self.viewModel.maxNameCount
+                profileView.setupNameField(
+                    withName: viewModel.userName,
+                    maxCount: viewModel.maxNameCount
                 )
             }
+            .store(in: &bag)
+        profileView
+            .nameTextField
+            .textDidChangePublisher
+            .compactMap { $0 }
+            .assign(to: \.userName, on: viewModel)
             .store(in: &bag)
         viewModel
             .$age
@@ -65,11 +72,6 @@ class CreateProfileViewController: ViewController<CreateProfileViewModel> {
     @IBAction
     func addAvatorButtonTapped(_ sender: Any) {
         viewModel.handleAddAvatarTapped()
-    }
-    
-    @IBAction
-    func nameTextFieldChanged(_ textField: UITextField) {
-        viewModel.userName = textField.text ?? .empty
     }
     
     @IBAction
