@@ -25,21 +25,21 @@ class AvatarView: UIView {
     //MARK: - Private Methods
     
     private func initialSetup() {
-        backgroundColor = .whiteLilac
+        backgroundColor = Asset.whiteLilac.color
         
         titleLabel.text = L10n.Localizable.selectAvatar
         titleLabel.font = .sfProText(withWeight: .medium, andSize: 16)
-        titleLabel.textColor = .blackCustom
+        titleLabel.textColor = Asset.blackCustom.color
         
-        collectionView.backgroundColor = .whiteLilac
+        collectionView.backgroundColor = Asset.whiteLilac.color
         
         actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 14)
-        actionButton.setTitleColor(.whiteCustom, for: .normal)
+        actionButton.setTitleColor(Asset.whiteCustom.color, for: .normal)
         actionButton.setTitle(L10n.Localizable.selectChanges, for: .normal)
         actionButton.layer.cornerRadius = 10
-        actionButton.backgroundColor = .astral
+        actionButton.backgroundColor = Asset.astral.color
         actionButton.addShadow(
-            color: .astral.withAlphaComponent(0.12),
+            color: Asset.astral.color.withAlphaComponent(0.12),
             x: 0,
             y: 12,
             alpha: 0.84,

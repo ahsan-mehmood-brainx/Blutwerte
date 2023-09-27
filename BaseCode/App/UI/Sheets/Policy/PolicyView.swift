@@ -30,25 +30,25 @@ class PolicyView: UIView {
     //MARK: - Private Methods
     
     private func initialSetup() {
-        backgroundColor = .mineShaft.withAlphaComponent(0.5)
+        backgroundColor = Asset.mineShaft.color.withAlphaComponent(0.5)
         containerView.layer.cornerRadius = 17
         containerView.clipsToBounds = true
-        containerView.backgroundColor = .whiteCustom
+        containerView.backgroundColor = Asset.whiteCustom.color
         
         titleLabel.text = L10n.Localizable.privacyTitle
-        titleLabel.textColor = .bayOfMany
+        titleLabel.textColor = Asset.bayOfMany.color
         titleLabel.font = .sfProText(withWeight: .semibold, andSize: 20)
         
         researchLabel.text = L10n.Localizable.researchDescription
-        researchLabel.textColor = .emperor
+        researchLabel.textColor = Asset.emperor.color
         researchLabel.font = .sfProText(withWeight: .regular, andSize: 12)
         
         let normal = Style {
-            $0.color = UIColor.emperor
+            $0.color = Asset.emperor.color
             $0.font = UIFont.sfProText(withWeight: .regular, andSize: 12)
         }
         let attributed = Style {
-            $0.color = UIColor.astral
+            $0.color = Asset.astral.color
         }
         
         let myGroup = StyleXML(base: normal, ["attributed": attributed])
@@ -63,9 +63,9 @@ class PolicyView: UIView {
         termsAndConditionsCheckLabel.attributedText = string.set(style: myGroup)
         
         continueButton.titleLabel?.font = .sfProText(withWeight: .regular, andSize: 16)
-        continueButton.setTitleColor(.whiteCustom, for: .normal)
+        continueButton.setTitleColor(Asset.whiteCustom.color, for: .normal)
         continueButton.setTitle(L10n.Localizable.continue, for: .normal)
         continueButton.layer.cornerRadius = 10
-        continueButton.backgroundColor = .astral
+        continueButton.backgroundColor = Asset.astral.color
     }
 }

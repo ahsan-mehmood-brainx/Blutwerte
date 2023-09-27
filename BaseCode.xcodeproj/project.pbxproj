@@ -72,7 +72,6 @@
 		43B3E6262A962BF000F8247A /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6222A962BF000F8247A /* SF-Pro-Display-Medium.otf */; };
 		43B3E6272A962BF000F8247A /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6232A962BF000F8247A /* SF-Pro-Display-Bold.otf */; };
 		43B3E6292A976CA300F8247A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6282A976CA300F8247A /* SplashView.swift */; };
-		43B3E62B2A976F0500F8247A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E62A2A976F0500F8247A /* UIColor.swift */; };
 		43B3E6382A97A37900F8247A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6362A97A37900F8247A /* OnboardingViewController.swift */; };
 		43B3E6392A97A37900F8247A /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6372A97A37900F8247A /* OnboardingViewController.xib */; };
 		43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E63B2A97A8F100F8247A /* OnboardingCollectionViewCell.swift */; };
@@ -151,7 +150,6 @@
 		43B3E6222A962BF000F8247A /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		43B3E6232A962BF000F8247A /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		43B3E6282A976CA300F8247A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		43B3E62A2A976F0500F8247A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		43B3E6362A97A37900F8247A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		43B3E6372A97A37900F8247A /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		43B3E63B2A97A8F100F8247A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -274,7 +272,6 @@
 				18209ED72A725FD90024F47B /* UITableViewCell.swift */,
 				18209EA72A714AB30024F47B /* UIViewController.swift */,
 				18209EE12A7260B70024F47B /* UIView.swift */,
-				43B3E62A2A976F0500F8247A /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -684,7 +681,6 @@
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
 				4347E0682A9E1DF00082A3B1 /* PolicyViewModel.swift in Sources */,
 				4347E04E2A9C8F520082A3B1 /* AvatarViewModel.swift in Sources */,
-				43B3E62B2A976F0500F8247A /* UIColor.swift in Sources */,
 				18209EC12A724CC50024F47B /* Router.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				43B3E6142A96291B00F8247A /* OnboardingViewModel.swift in Sources */,

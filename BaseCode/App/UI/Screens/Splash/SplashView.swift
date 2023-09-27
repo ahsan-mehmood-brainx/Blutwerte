@@ -22,9 +22,9 @@ class SplashView: UIView {
     //MARK: - Private Methods
     
     private func initialSetup() {
-        backgroundColor = .whiteLilac
+        backgroundColor = Asset.whiteLilac.color
         
-        splashAnimation.backgroundColor = .whiteLilac
+        splashAnimation.backgroundColor = Asset.whiteLilac.color
         splashAnimation.contentMode = .scaleAspectFit
     }
 }

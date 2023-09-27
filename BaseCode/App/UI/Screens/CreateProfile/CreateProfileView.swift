@@ -53,17 +53,17 @@ class CreateProfileView: UIView {
             $0?.clearBorder()
         }
         [maleLabel, femaleLabel].forEach {
-            $0?.textColor = .paleSky
+            $0?.textColor = Asset.paleSky.color
         }
         switch gender {
         case .male:
             maleView.layer.borderWidth = 2
-            maleView.layer.borderColor = UIColor.astral.cgColor
-            maleLabel.textColor = .blackCustom
+            maleView.layer.borderColor = Asset.astral.color.cgColor
+            maleLabel.textColor = Asset.blackCustom.color
         case .female:
             femaleView.layer.borderWidth = 2
-            femaleView.layer.borderColor = UIColor.astral.cgColor
-            femaleLabel.textColor = .blackCustom
+            femaleView.layer.borderColor = Asset.astral.color.cgColor
+            femaleLabel.textColor = Asset.blackCustom.color
         default:
             return
         }
@@ -72,17 +72,17 @@ class CreateProfileView: UIView {
     //MARK: - Private Methods
     
     private func initialSetup() {
-        backgroundColor = .whiteLilac
+        backgroundColor = Asset.whiteLilac.color
         
-        titleLabel.textColor = .blackCustom
+        titleLabel.textColor = Asset.blackCustom.color
         titleLabel.font = .sfProText(withWeight: .semibold, andSize: 30)
         titleLabel.text = L10n.Localizable.createProfile
         
-        avatorView.backgroundColor = .whiteLilac
+        avatorView.backgroundColor = Asset.whiteLilac.color
         
-        avatorImageView.backgroundColor = .whiteLilac
+        avatorImageView.backgroundColor = Asset.whiteLilac.color
         avatorImageView.addShadow(
-            color: .bayOfMany.withAlphaComponent(0.16),
+            color: Asset.bayOfMany.color.withAlphaComponent(0.16),
             x: 0,
             y: 0,
             alpha: 0.94,
@@ -90,34 +90,33 @@ class CreateProfileView: UIView {
         )
         avatorImageView.layer.cornerRadius = avatorImageView.frame.size.width / 2
         
-        nameTitle.textColor = .ghost
+        nameTitle.textColor = Asset.ghost.color
         nameTitle.font = .sfProText(withWeight: .regular, andSize: 12)
         nameTitle.text = L10n.Localizable.name
         
         nameView.layer.cornerRadius = 12
-        nameView.backgroundColor = .whiteCustom
+        nameView.backgroundColor = Asset.whiteCustom.color
         
         nameTextField.font = .sfProText(withWeight: .regular, andSize: 14)
-        nameTextField.textColor = .paleSky
+        nameTextField.textColor = Asset.paleSky.color
         
-        countCircleProgressBarView.trackColor = .periwinKleGray
-        countCircleProgressBarView.trackColor = .astral
+        countCircleProgressBarView.trackColor = Asset.astral.color
         
         countLabel.font = .sfProText(withWeight: .regular, andSize: 12)
-        countLabel.textColor = .bayOfMany
+        countLabel.textColor = Asset.bayOfMany.color
         
-        ageTitle.textColor = .ghost
+        ageTitle.textColor = Asset.ghost.color
         ageTitle.font = .sfProText(withWeight: .regular, andSize: 12)
         ageTitle.text = L10n.Localizable.age
         
         ageView.layer.cornerRadius = 12
-        ageView.backgroundColor = .whiteCustom
+        ageView.backgroundColor = Asset.whiteCustom.color
         
         ageTextField.font = .sfProText(withWeight: .regular, andSize: 14)
-        ageTextField.textColor = .paleSky
+        ageTextField.textColor = Asset.paleSky.color
         ageTextField.isUserInteractionEnabled = false
         
-        genderTitle.textColor = .paleSky
+        genderTitle.textColor = Asset.paleSky.color
         genderTitle.font = .sfProText(withWeight: .regular, andSize: 14)
         genderTitle.text = L10n.Localizable.gender
         
@@ -133,19 +132,19 @@ class CreateProfileView: UIView {
         femaleLabel.text = Gender.female.title
         femaleLabel.font = .sfProText(withWeight: .regular, andSize: 14)
         
-        descriptionView.backgroundColor = .whiteLilac
+        descriptionView.backgroundColor = Asset.whiteLilac.color
         
-        descriptionLabel.textColor = .blackCustom
+        descriptionLabel.textColor = Asset.blackCustom.color
         descriptionLabel.font = .sfProText(withWeight: .regular, andSize: 14)
         descriptionLabel.text = L10n.Localizable.genderDescription
         
         actionButton.setTitle(L10n.Localizable.add, for: .normal)
         actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 16)
-        actionButton.setTitleColor(.whiteCustom, for: .normal)
+        actionButton.setTitleColor(Asset.whiteCustom.color, for: .normal)
         actionButton.layer.cornerRadius = 10
-        actionButton.backgroundColor = .astral
+        actionButton.backgroundColor = Asset.astral.color
         actionButton.addShadow(
-            color: .astral.withAlphaComponent(0.12),
+            color: Asset.astral.color.withAlphaComponent(0.12),
             x: 0,
             y: 12,
             alpha: 0.84,

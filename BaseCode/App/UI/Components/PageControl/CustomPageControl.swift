@@ -16,8 +16,8 @@ class CustomPageControl: UIPageControl {
     //MARK: - Properties
     
     var delegate: CustomPageControlDelegate?
-    private var activeColor: UIColor = .astral
-    private var inactiveColor: UIColor = .periwinKleGray
+    private var activeColor: UIColor = Asset.astral.color
+    private var inactiveColor: UIColor = Asset.periwinKleGray.color
     
     private var activeSize: CGSize = CGSize(width: 16, height: 8)
     private var inactiveSize: CGSize = CGSize(width: 8, height: 8)

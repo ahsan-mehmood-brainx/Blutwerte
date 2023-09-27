@@ -34,13 +34,13 @@ class AgeSelectionView: UIView {
     //MARK: - Private Methods
     
     private func initialSetup() {
-        contententView.backgroundColor = .whiteLilac
+        contententView.backgroundColor = Asset.whiteLilac.color
         contententView.clipsToBounds = true
         contententView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         contententView.layer.cornerRadius = 13
         
         titleLabel.text = L10n.Localizable.selectYourAge
         titleLabel.font = .sfProText(withWeight: .medium, andSize: 16)
-        titleLabel.textColor = .blackCustom
+        titleLabel.textColor = Asset.blackCustom.color
     }
 }
