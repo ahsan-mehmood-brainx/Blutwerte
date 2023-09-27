@@ -12,7 +12,14 @@ class AvatarViewModel: ViewModel {
     //MARK: - Properties
     
     @Published var avatar: Avatar?
-    var selectedAvatar: ((Avatar?) -> Void)?
+    var selectedAvatar: ((Avatar?) -> Void)
+    
+    //MARK: - Initializers
+    
+    init(avatar: Avatar?, selectedAvatar: @escaping (Avatar?) -> Void) {
+        self.avatar = avatar
+        self.selectedAvatar = selectedAvatar
+    }
     
     //MARK: - Methods
     
@@ -21,7 +28,7 @@ class AvatarViewModel: ViewModel {
     }
     
     func handleActionButtonTapped() {
-        selectedAvatar?(avatar)
+        selectedAvatar(avatar)
         router.dismiss()
     }
 }

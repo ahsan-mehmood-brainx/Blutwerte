@@ -20,12 +20,10 @@ enum Sheet {
             return AgeSelectionViewController(viewModel: viewModel)
             
         case let .avatar(avatar, selectedAvatar):
-            let viewModel = AvatarViewModel()
-            viewModel.avatar = avatar
-            viewModel.selectedAvatar = selectedAvatar
-            let ViewController =  AvatarViewController(viewModel: viewModel)
-            ViewController.modalPresentationStyle = .fullScreen
-            return ViewController
+            let viewModel = AvatarViewModel(avatar: avatar, selectedAvatar: selectedAvatar)
+            let viewController =  AvatarViewController(viewModel: viewModel)
+            viewController.modalPresentationStyle = .fullScreen
+            return viewController
             
         case .policy:
             let viewModel = PolicyViewModel()

@@ -70,11 +70,15 @@ class CustomPageControl: UIPageControl {
             dot.translatesAutoresizingMaskIntoConstraints = false
             addSubview(dot)
             dots.append(dot)
-            
-            let centerXConstraint = dot.centerXAnchor.constraint(equalTo: centerXAnchor, constant: CGFloat((i - numberOfPages / 2) * (Int(activeSize.width) + Int(dotSpacing))))
+            let widthConstant: CGFloat = i == currentPage ? activeSize.width : inactiveSize.width
+            let heightConstant: CGFloat = i == currentPage ? activeSize.height : inactiveSize.height
+            let centerXConstraint = dot.centerXAnchor.constraint(
+                equalTo: centerXAnchor,
+                constant: CGFloat((i - numberOfPages / 2) * (Int(activeSize.width) + Int(dotSpacing)))
+            )
             let centerYConstraint = dot.centerYAnchor.constraint(equalTo: centerYAnchor)
-            let widthConstraint = dot.widthAnchor.constraint(equalToConstant: i == currentPage ? activeSize.width : inactiveSize.width)
-            let heightConstraint = dot.heightAnchor.constraint(equalToConstant: i == currentPage ? activeSize.height : inactiveSize.height)
+            let widthConstraint = dot.widthAnchor.constraint(equalToConstant: widthConstant)
+            let heightConstraint = dot.heightAnchor.constraint(equalToConstant: heightConstant)
             
             NSLayoutConstraint.activate([centerXConstraint, centerYConstraint, widthConstraint, heightConstraint])
         }
