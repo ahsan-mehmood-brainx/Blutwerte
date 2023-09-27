@@ -43,12 +43,12 @@ extension UIFont {
         return UIFont(name: fontName, size: size)!
     }
     
-    static func sfProText(withWeight weight: Weight, andSize size: CGFloat) -> UIFont {
+    static func primary(withWeight weight: Weight, andSize size: CGFloat) -> UIFont {
         let fontName = "\(Config.sfProText)-\(weight.name)"
         return UIFont(name: fontName, size: size)!
     }
     
-    static func sfProDisplay(withWeight weight: Weight, andSize size: CGFloat) -> UIFont {
+    static func secondary(withWeight weight: Weight, andSize size: CGFloat) -> UIFont {
         let fontName = "\(Config.sfProDisplay)-\(weight.name)"
         return UIFont(name: fontName, size: size)!
     }

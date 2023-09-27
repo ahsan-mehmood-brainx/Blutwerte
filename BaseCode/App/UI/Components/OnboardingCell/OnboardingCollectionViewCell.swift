@@ -33,10 +33,10 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         }
         imageView.contentMode = .scaleAspectFit
         
-        titleLabel.font = .sfProText(withWeight: .bold, andSize: 24)
+        titleLabel.font = .primary(withWeight: .bold, andSize: 24)
         titleLabel.textColor = Asset.astral.color
         
-        descriptionLabel.font = .sfProText(withWeight: .regular, andSize: 16)
+        descriptionLabel.font = .primary(withWeight: .regular, andSize: 16)
         descriptionLabel.textColor = Asset.hoki.color
     }
 }

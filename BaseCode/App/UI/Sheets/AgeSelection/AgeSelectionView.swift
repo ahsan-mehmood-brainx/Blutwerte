@@ -40,7 +40,7 @@ class AgeSelectionView: UIView {
         contententView.layer.cornerRadius = 13
         
         titleLabel.text = L10n.Localizable.selectYourAge
-        titleLabel.font = .sfProText(withWeight: .medium, andSize: 16)
+        titleLabel.font = .primary(withWeight: .medium, andSize: 16)
         titleLabel.textColor = Asset.blackCustom.color
     }
 }

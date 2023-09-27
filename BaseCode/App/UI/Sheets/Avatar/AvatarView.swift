@@ -28,12 +28,12 @@ class AvatarView: UIView {
         backgroundColor = Asset.whiteLilac.color
         
         titleLabel.text = L10n.Localizable.selectAvatar
-        titleLabel.font = .sfProText(withWeight: .medium, andSize: 16)
+        titleLabel.font = .primary(withWeight: .medium, andSize: 16)
         titleLabel.textColor = Asset.blackCustom.color
         
         collectionView.backgroundColor = Asset.whiteLilac.color
         
-        actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 14)
+        actionButton.titleLabel?.font = .secondary(withWeight: .regular, andSize: 14)
         actionButton.setTitleColor(Asset.whiteCustom.color, for: .normal)
         actionButton.setTitle(L10n.Localizable.selectChanges, for: .normal)
         actionButton.layer.cornerRadius = 10

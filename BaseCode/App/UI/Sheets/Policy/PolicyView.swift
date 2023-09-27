@@ -37,15 +37,15 @@ class PolicyView: UIView {
         
         titleLabel.text = L10n.Localizable.privacyTitle
         titleLabel.textColor = Asset.bayOfMany.color
-        titleLabel.font = .sfProText(withWeight: .semibold, andSize: 20)
+        titleLabel.font = .primary(withWeight: .semibold, andSize: 20)
         
         researchLabel.text = L10n.Localizable.researchDescription
         researchLabel.textColor = Asset.emperor.color
-        researchLabel.font = .sfProText(withWeight: .regular, andSize: 12)
+        researchLabel.font = .primary(withWeight: .regular, andSize: 12)
         
         let normal = Style {
             $0.color = Asset.emperor.color
-            $0.font = UIFont.sfProText(withWeight: .regular, andSize: 12)
+            $0.font = UIFont.primary(withWeight: .regular, andSize: 12)
         }
         let attributed = Style {
             $0.color = Asset.astral.color
@@ -62,7 +62,7 @@ class PolicyView: UIView {
         """
         termsAndConditionsCheckLabel.attributedText = string.set(style: myGroup)
         
-        continueButton.titleLabel?.font = .sfProText(withWeight: .regular, andSize: 16)
+        continueButton.titleLabel?.font = .primary(withWeight: .regular, andSize: 16)
         continueButton.setTitleColor(Asset.whiteCustom.color, for: .normal)
         continueButton.setTitle(L10n.Localizable.continue, for: .normal)
         continueButton.layer.cornerRadius = 10

@@ -30,7 +30,7 @@ class OnboardingView: UIView {
         
         pageController.backgroundColor = Asset.whiteLilac.color
         
-        actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 16)
+        actionButton.titleLabel?.font = .secondary(withWeight: .regular, andSize: 16)
         actionButton.setTitleColor(Asset.whiteCustom.color, for: .normal)
         actionButton.layer.cornerRadius = 10
         actionButton.backgroundColor = Asset.astral.color
