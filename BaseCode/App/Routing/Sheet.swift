@@ -16,9 +16,7 @@ enum Sheet {
     func controller() -> UIViewController {
         switch self {
         case let .ageSelection(age, selectedAge):
-            let viewModel = AgeSelectionViewModel()
-            viewModel.selectedRow = age - 1
-            viewModel.selectedAge = selectedAge
+            let viewModel = AgeSelectionViewModel(age: age, selectedAge: selectedAge)
             return AgeSelectionViewController(viewModel: viewModel)
             
         case let .avatar(avatar, selectedAvatar):
