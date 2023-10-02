@@ -9,7 +9,10 @@ import Combine
 import Foundation
 
 class SplashViewModel: ViewModel {
-
     
-
+    //MARK: - Functions
+    
+    func moveToNextScreen() {
+        router.append(.onboarding)
+    }
 }

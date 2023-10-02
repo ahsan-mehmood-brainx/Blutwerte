@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios",
+      "state" : {
+        "revision" : "d6feea26a370019b4d3a85f5984cb95a2734776f",
+        "version" : "4.2.0"
+      }
+    },
+    {
       "identity" : "swift-api-manager",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/brainx-technologies/swift-api-manager",
@@ -25,6 +34,15 @@
       "state" : {
         "revision" : "955fdc93c4b02a20af4958822c58fad11b90b0cd",
         "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swiftrichstring",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/malcommac/SwiftRichString",
+      "state" : {
+        "revision" : "9bf4b5af6bb4386865636fc504d6c588c2b65040",
+        "version" : "3.7.2"
       }
     }
   ],

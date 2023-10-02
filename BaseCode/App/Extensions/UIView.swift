@@ -86,4 +86,16 @@ extension UIView {
 
         return image
     }
+    
+    func addShadow(color: UIColor, x: CGFloat, y: CGFloat, alpha: Float, radius: CGFloat) {
+        layer.shadowColor = color.cgColor
+        layer.shadowOffset = CGSize(width: x, height: y)
+        layer.shadowOpacity = alpha
+        layer.shadowRadius = radius
+    }
+    
+    func clearBorder() {
+        layer.borderColor = UIColor.clear.cgColor
+        layer.borderWidth = 0
+    }
 }

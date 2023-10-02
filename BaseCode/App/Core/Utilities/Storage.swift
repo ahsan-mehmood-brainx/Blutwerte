@@ -42,3 +42,16 @@ struct Storage<T> {
         }
     }
 }
+
+protocol SessionService {
+    var isUserLoggedIn: Bool { get }
+}
+
+class SessionManager: SessionService {
+
+    @Storage("accessToken") private var accessToken: String? = nil
+
+    var isUserLoggedIn: Bool {
+        accessToken != nil
+    }
+}

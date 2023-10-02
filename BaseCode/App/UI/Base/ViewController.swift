@@ -45,12 +45,7 @@ class ViewController<T: ViewModel>: UIViewController {
 
         setupBinding()
     }
-}
-
-// MARK: - Public Methods
-
-extension ViewController {
-
+    
     func setupBinding() {
         viewModel
             .$isLoading
@@ -88,8 +83,4 @@ extension ViewController {
             activityIndicator.stopAnimating()
         }
     }
-
 }
-
-
-

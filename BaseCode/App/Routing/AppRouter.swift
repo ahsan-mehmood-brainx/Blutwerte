@@ -40,4 +40,8 @@ class AppRouter: Router {
         let controller = sheet.controller()
         navigationController.present(controller, animated: true)
     }
+    
+    func dismiss() {
+        navigationController.dismiss(animated: true)
+    }
 }

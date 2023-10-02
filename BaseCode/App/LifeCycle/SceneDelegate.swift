@@ -25,6 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func configureApp(with windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
         let navigationController = UINavigationController()
+        navigationController.isNavigationBarHidden = true
         let router = AppRouter(
             navigationController: navigationController,
             route: .splash
@@ -45,7 +46,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func registerDependencies() {
-        // TODO: Register dependencies such as repositories, managers etc
+        Resolver.default.register(
+            type: UserRepository.self,
+            factory: { DefaultUserRepository() }
+        )
     }
 }
-

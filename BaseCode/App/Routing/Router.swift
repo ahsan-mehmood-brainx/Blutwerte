@@ -14,5 +14,5 @@ protocol Router {
     func pop()
     func setRoot(_ route: Route)
     func showSheet(_ sheet: Sheet)
-
+    func dismiss()
 }
