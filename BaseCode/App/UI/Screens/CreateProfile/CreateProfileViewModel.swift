@@ -43,7 +43,18 @@ class CreateProfileViewModel: ViewModel {
     }
     
     func validateUser() -> ValidationStatus {
-        //TODO: - Add Validations In Next Branch
+        guard let avatar = avatar else {
+            return .invalid(message: L10n.Localizable.kindlyAddImage)
+        }
+        guard userName.count > 0 else {
+            return .invalid(message: L10n.Localizable.kindlyAddName)
+        }
+        guard age > 0 else {
+            return .invalid(message: L10n.Localizable.kindlyAddAge)
+        }
+        guard let gender = gender else {
+            return .invalid(message: L10n.Localizable.kindlySelectGender)
+        }
         return .valid
     }
     

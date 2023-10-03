@@ -1,7 +1,0 @@
-<svg id="Component_5_8" data-name="Component 5 – 8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="Rectangle_5582" data-name="Rectangle 5582" fill="#3176a7" stroke="#3176a7" stroke-width="1">
-    <rect width="24" height="24" rx="5" stroke="none"/>
-    <rect x="0.5" y="0.5" width="23" height="23" rx="4.5" fill="none"/>
-  </g>
-  <path id="Icon_ionic-ios-checkmark" data-name="Icon ionic-ios-checkmark" d="M21.155,13.172l-.881-.906a.189.189,0,0,0-.14-.06h0a.182.182,0,0,0-.14.06l-6.106,6.151L11.666,16.2a.194.194,0,0,0-.28,0l-.891.891a.2.2,0,0,0,0,.285l2.8,2.8a.886.886,0,0,0,.586.285.929.929,0,0,0,.581-.275h.005l6.692-6.727A.214.214,0,0,0,21.155,13.172Z" transform="translate(-3.434 -4.206)" fill="#fff"/>
-</svg>
