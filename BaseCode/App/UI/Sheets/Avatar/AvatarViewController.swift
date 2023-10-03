@@ -23,25 +23,25 @@ enum Avatar: Int, CaseIterable {
     var image: UIImage {
         switch self {
         case .avatar1:
-            return UIImage(named: Images.avatar1)!
+            return Asset.avatar1.image
         case .avatar2:
-            return UIImage(named: Images.avatar2)!
+            return Asset.avatar2.image
         case .avatar3:
-            return UIImage(named: Images.avatar3)!
+            return Asset.avatar3.image
         case .avatar4:
-            return UIImage(named: Images.avatar4)!
+            return Asset.avatar4.image
         case .avatar5:
-            return UIImage(named: Images.avatar5)!
+            return Asset.avatar5.image
         case .avatar6:
-            return UIImage(named: Images.avatar6)!
+            return Asset.avatar6.image
         case .avatar7:
-            return UIImage(named: Images.avatar7)!
+            return Asset.avatar7.image
         case .avatar8:
-            return UIImage(named: Images.avatar8)!
+            return Asset.avatar8.image
         case .avatar9:
-            return UIImage(named: Images.avatar9)!
+            return Asset.avatar9.image
         case .avatar10:
-            return UIImage(named: Images.avatar10)!
+            return Asset.avatar10.image
         }
     }
 }

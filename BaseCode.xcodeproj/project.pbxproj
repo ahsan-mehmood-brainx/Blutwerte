@@ -41,6 +41,7 @@
 		18209EE42A7260D30024F47B /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE32A7260D30024F47B /* XibView.swift */; };
 		18209EE72A7261C30024F47B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE62A7261C30024F47B /* Storage.swift */; };
 		432861502A9F3DEC00361D50 /* CustomTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328614F2A9F3DEC00361D50 /* CustomTabbarViewModel.swift */; };
+		4318021B2AC424A700681F0B /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4318021A2AC424A700681F0B /* UITextField.swift */; };
 		432861532AA0AD8F00361D50 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432861522AA0AD8F00361D50 /* CustomPageControl.swift */; };
 		4347E03A2A9C65F50082A3B1 /* AgeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */; };
 		4347E0402A9C66130082A3B1 /* AgeSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */; };
@@ -76,13 +77,11 @@
 		43B3E6262A962BF000F8247A /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6222A962BF000F8247A /* SF-Pro-Display-Medium.otf */; };
 		43B3E6272A962BF000F8247A /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6232A962BF000F8247A /* SF-Pro-Display-Bold.otf */; };
 		43B3E6292A976CA300F8247A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6282A976CA300F8247A /* SplashView.swift */; };
-		43B3E62B2A976F0500F8247A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E62A2A976F0500F8247A /* UIColor.swift */; };
 		43B3E6382A97A37900F8247A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6362A97A37900F8247A /* OnboardingViewController.swift */; };
 		43B3E6392A97A37900F8247A /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E6372A97A37900F8247A /* OnboardingViewController.xib */; };
 		43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E63B2A97A8F100F8247A /* OnboardingCollectionViewCell.swift */; };
 		43B3E63E2A97A8F100F8247A /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E63C2A97A8F100F8247A /* OnboardingCollectionViewCell.xib */; };
 		43B3E6402A97AA7100F8247A /* dna.json in Resources */ = {isa = PBXBuildFile; fileRef = 43B3E63F2A97AA7100F8247A /* dna.json */; };
-		43B3E6422A97B29B00F8247A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6412A97B29B00F8247A /* Images.swift */; };
 		43B3E6452A98A67100F8247A /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3E6442A98A67000F8247A /* Onboarding.swift */; };
 		43D001F52A98AF1300E9729C /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D001F42A98AF1300E9729C /* UserRepository.swift */; };
 		43D001F92A98B6AC00E9729C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D001F82A98B6AC00E9729C /* AppConstants.swift */; };
@@ -127,6 +126,7 @@
 		18209EE32A7260D30024F47B /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		4328614F2A9F3DEC00361D50 /* CustomTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarViewModel.swift; sourceTree = "<group>"; };
+		4318021A2AC424A700681F0B /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		432861522AA0AD8F00361D50 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
 		4347E0392A9C65F50082A3B1 /* AgeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionView.swift; sourceTree = "<group>"; };
 		4347E03F2A9C66130082A3B1 /* AgeSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewModel.swift; sourceTree = "<group>"; };
@@ -160,13 +160,11 @@
 		43B3E6222A962BF000F8247A /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		43B3E6232A962BF000F8247A /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		43B3E6282A976CA300F8247A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		43B3E62A2A976F0500F8247A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		43B3E6362A97A37900F8247A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		43B3E6372A97A37900F8247A /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		43B3E63B2A97A8F100F8247A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		43B3E63C2A97A8F100F8247A /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		43B3E63F2A97AA7100F8247A /* dna.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dna.json; sourceTree = "<group>"; };
-		43B3E6412A97B29B00F8247A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		43B3E6442A98A67000F8247A /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		43D001F42A98AF1300E9729C /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		43D001F82A98B6AC00E9729C /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -284,7 +282,7 @@
 				18209ED72A725FD90024F47B /* UITableViewCell.swift */,
 				18209EA72A714AB30024F47B /* UIViewController.swift */,
 				18209EE12A7260B70024F47B /* UIView.swift */,
-				43B3E62A2A976F0500F8247A /* UIColor.swift */,
+				4318021A2AC424A700681F0B /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -294,7 +292,6 @@
 			children = (
 				18209ED02A725B6F0024F47B /* Environment.swift */,
 				18209ED52A725CD40024F47B /* Config.swift */,
-				43B3E6412A97B29B00F8247A /* Images.swift */,
 				43D001F82A98B6AC00E9729C /* AppConstants.swift */,
 			);
 			path = Globals;
@@ -701,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
+				4318021B2AC424A700681F0B /* UITextField.swift in Sources */,
 				43D001F92A98B6AC00E9729C /* AppConstants.swift in Sources */,
 				43B3E6382A97A37900F8247A /* OnboardingViewController.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
@@ -709,7 +707,6 @@
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
 				4347E0682A9E1DF00082A3B1 /* PolicyViewModel.swift in Sources */,
 				4347E04E2A9C8F520082A3B1 /* AvatarViewModel.swift in Sources */,
-				43B3E62B2A976F0500F8247A /* UIColor.swift in Sources */,
 				18209EC12A724CC50024F47B /* Router.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				43B3E6142A96291B00F8247A /* OnboardingViewModel.swift in Sources */,
@@ -735,7 +732,6 @@
 				43B3E63D2A97A8F100F8247A /* OnboardingCollectionViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
 				432861532AA0AD8F00361D50 /* CustomPageControl.swift in Sources */,
-				43B3E6422A97B29B00F8247A /* Images.swift in Sources */,
 				43D002022A98C2AA00E9729C /* CreateProfileViewModel.swift in Sources */,
 				4347E05F2A9E0D760082A3B1 /* Validation.swift in Sources */,
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,

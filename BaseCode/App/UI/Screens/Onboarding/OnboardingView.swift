@@ -26,22 +26,22 @@ class OnboardingView: UIView {
     //MARK: - Private Methods
     
     private func initialSetup() {
-        backgroundColor = .whiteLilac
+        backgroundColor = Asset.whiteLilac.color
         
-        pageController.backgroundColor = .whiteLilac
+        pageController.backgroundColor = Asset.whiteLilac.color
         
-        actionButton.titleLabel?.font = .sfProDisplay(withWeight: .regular, andSize: 16)
-        actionButton.setTitleColor(.whiteCustom, for: .normal)
+        actionButton.titleLabel?.font = .secondary(withWeight: .regular, andSize: 16)
+        actionButton.setTitleColor(Asset.whiteCustom.color, for: .normal)
         actionButton.layer.cornerRadius = 10
-        actionButton.backgroundColor = .astral
+        actionButton.backgroundColor = Asset.astral.color
         actionButton.addShadow(
-            color: .astral.withAlphaComponent(0.12),
+            color: Asset.astral.color.withAlphaComponent(0.12),
             x: 0,
             y: 12,
             alpha: 0.84,
             radius: 12
         )
         
-        tranitionView.backgroundColor = .astral
+        tranitionView.backgroundColor = Asset.astral.color
     }
 }

@@ -30,7 +30,7 @@ class AvatarCollectionViewCell: UICollectionViewCell {
             return
         }
         containerView.layer.borderWidth = 1
-        containerView.layer.borderColor = UIColor.astral.cgColor
+        containerView.layer.borderColor = Asset.astral.color.cgColor
     }
     
     //MARK: - Private Methods

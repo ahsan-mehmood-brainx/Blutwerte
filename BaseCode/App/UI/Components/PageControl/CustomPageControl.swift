@@ -16,8 +16,8 @@ class CustomPageControl: UIPageControl {
     //MARK: - Properties
     
     var delegate: CustomPageControlDelegate?
-    private var activeColor: UIColor = .astral
-    private var inactiveColor: UIColor = .periwinKleGray
+    private var activeColor: UIColor = Asset.astral.color
+    private var inactiveColor: UIColor = Asset.periwinKleGray.color
     
     private var activeSize: CGSize = CGSize(width: 16, height: 8)
     private var inactiveSize: CGSize = CGSize(width: 8, height: 8)
@@ -70,11 +70,15 @@ class CustomPageControl: UIPageControl {
             dot.translatesAutoresizingMaskIntoConstraints = false
             addSubview(dot)
             dots.append(dot)
-            
-            let centerXConstraint = dot.centerXAnchor.constraint(equalTo: centerXAnchor, constant: CGFloat((i - numberOfPages / 2) * (Int(activeSize.width) + Int(dotSpacing))))
+            let widthConstant: CGFloat = i == currentPage ? activeSize.width : inactiveSize.width
+            let heightConstant: CGFloat = i == currentPage ? activeSize.height : inactiveSize.height
+            let centerXConstraint = dot.centerXAnchor.constraint(
+                equalTo: centerXAnchor,
+                constant: CGFloat((i - numberOfPages / 2) * (Int(activeSize.width) + Int(dotSpacing)))
+            )
             let centerYConstraint = dot.centerYAnchor.constraint(equalTo: centerYAnchor)
-            let widthConstraint = dot.widthAnchor.constraint(equalToConstant: i == currentPage ? activeSize.width : inactiveSize.width)
-            let heightConstraint = dot.heightAnchor.constraint(equalToConstant: i == currentPage ? activeSize.height : inactiveSize.height)
+            let widthConstraint = dot.widthAnchor.constraint(equalToConstant: widthConstant)
+            let heightConstraint = dot.heightAnchor.constraint(equalToConstant: heightConstant)
             
             NSLayoutConstraint.activate([centerXConstraint, centerYConstraint, widthConstraint, heightConstraint])
         }

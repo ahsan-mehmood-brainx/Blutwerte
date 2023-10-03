@@ -29,14 +29,14 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     
     private func initialSetup() {
         [containerView, imageView, animationView].forEach {
-            $0?.backgroundColor = .whiteLilac
+            $0?.backgroundColor = Asset.whiteLilac.color
         }
         imageView.contentMode = .scaleAspectFit
         
-        titleLabel.font = .sfProText(withWeight: .bold, andSize: 24)
-        titleLabel.textColor = .astral
+        titleLabel.font = .primary(withWeight: .bold, andSize: 24)
+        titleLabel.textColor = Asset.astral.color
         
-        descriptionLabel.font = .sfProText(withWeight: .regular, andSize: 16)
-        descriptionLabel.textColor = .hoki
+        descriptionLabel.font = .primary(withWeight: .regular, andSize: 16)
+        descriptionLabel.textColor = Asset.hoki.color
     }
 }

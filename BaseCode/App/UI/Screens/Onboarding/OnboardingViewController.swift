@@ -110,7 +110,7 @@ extension OnboardingViewController: UICollectionViewDataSource {
         } else {
             cell.animationView.isHidden = true
             cell.imageView.isHidden = false
-            cell.imageView.image = UIImage(named: onboarding.imageName ?? AppConstants.empty)
+            cell.imageView.image = UIImage(named: onboarding.imageName ?? .empty)
         }
         cell.titleLabel.text = onboarding.title
         cell.descriptionLabel.text = onboarding.descpription

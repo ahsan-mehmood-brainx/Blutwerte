@@ -17,7 +17,7 @@ class PolicyViewController: ViewController<PolicyViewModel> {
     
     private var isResearchChecked: Bool! {
         didSet {
-            let imageName = isResearchChecked ? Images.checkedSquare : Images.unChecked
+            let imageName = isResearchChecked ? Asset.checkedSquare.name : Asset.unChecked.name
             policyView.researchCheckButton.setImage(UIImage(named: imageName), for: .normal)
             updateContinueButton()
         }
@@ -25,7 +25,7 @@ class PolicyViewController: ViewController<PolicyViewModel> {
     
     private var isTermsAndConditionsChecked: Bool! {
         didSet {
-            let imageName = isTermsAndConditionsChecked ? Images.checkedSquare : Images.unChecked
+            let imageName = isTermsAndConditionsChecked ? Asset.checkedSquare.name : Asset.unChecked.name
             policyView.termsAndConditionsCheckButton.setImage(UIImage(named: imageName), for: .normal)
             updateContinueButton()
         }

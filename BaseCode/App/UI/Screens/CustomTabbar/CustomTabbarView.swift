@@ -45,43 +45,43 @@ class CustomTabbarView: UIView {
         removeActiveTab()
         switch tab {
         case .home:
-            homeImageView.tintColor = .astral
-            homeLabel.textColor = .astral
+            homeImageView.tintColor = Asset.astral.color
+            homeLabel.textColor = Asset.astral.color
         case .tests:
-            testImageView.tintColor = .astral
-            testLabel.textColor = .astral
+            testImageView.tintColor = Asset.astral.color
+            testLabel.textColor = Asset.astral.color
         case .add:
             return
         case .charts:
-            chartsImageView.tintColor = .astral
-            chartsLabel.textColor = .astral
+            chartsImageView.tintColor = Asset.astral.color
+            chartsLabel.textColor = Asset.astral.color
         case .more:
-            moreImageView.tintColor = .astral
-            moreLabel.textColor = .astral
+            moreImageView.tintColor = Asset.astral.color
+            moreLabel.textColor = Asset.astral.color
         }
     }
     
     func removeActiveTab() {
         [homeImageView, testImageView, chartsImageView, moreImageView].forEach {
-            $0?.tintColor = .silver
+            $0?.tintColor = Asset.silver.color
         }
         [homeLabel, testLabel, chartsLabel, moreLabel].forEach {
-            $0?.textColor = .silver
+            $0?.textColor = Asset.silver.color
         }
     }
     
     //MARK: - Private Methods
     
     private func initialSetup() {
-        backgroundColor = .whiteLilac
+        backgroundColor = Asset.whiteLilac.color
         
-        containerView.backgroundColor = .whiteLilac
+        containerView.backgroundColor = Asset.whiteLilac.color
         
-        tabView.backgroundColor = .whiteCustom
+        tabView.backgroundColor = Asset.whiteCustom.color
         tabView.layer.cornerRadius = 12
         tabView.clipsToBounds = true
         tabView.addShadow(
-            color: .bayOfMany.withAlphaComponent(0.12),
+            color: Asset.bayOfMany.color.withAlphaComponent(0.12),
             x: 0,
             y: 0,
             alpha: 0.8,
@@ -94,7 +94,7 @@ class CustomTabbarView: UIView {
         moreLabel.text = L10n.Localizable.more
         
         [homeLabel, testLabel, chartsLabel, moreLabel].forEach {
-            $0?.font = .sfProText(withWeight: .regular, andSize: 12)
+            $0?.font = .primary(withWeight: .regular, andSize: 12)
         }
     }
 }
